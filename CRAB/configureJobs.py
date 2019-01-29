@@ -2,10 +2,6 @@
 
 import os
 import argparse
-import ROOT
-import math
-import array
-
 
 def setcrabconfig(datasetname,prodtag,Site,OutputPath):
     jobtag = datasetname.split("/")[2]
