@@ -1,0 +1,214 @@
+DEBUG 2019-02-21 11:28:53,887: 	 Executing command: 'submit'
+DEBUG 2019-02-21 11:28:53,887: 	 Found CRAB cache file /afs/cern.ch/user/b/bjoshi/.crab3
+DEBUG 2019-02-21 11:28:53,898: 	 Checking credentials
+DEBUG 2019-02-21 11:28:53,900: 	 Found proxy file /tmp/x509up_u92327
+DEBUG 2019-02-21 11:28:53,900: 	 Getting proxy life time left
+DEBUG 2019-02-21 11:28:55,429: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -timeleft
+ output : 41130
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:28:56,658: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -actimeleft
+ output : 41129
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:28:56,659: 	 Proxy lifetime 41130 secs is different from voms extension lifetime 41129 secs for proxy: /tmp/x509up_u92327
+DEBUG 2019-02-21 11:28:56,659: 	 Proxy valid for 11:25:29 hours
+INFO 2019-02-21 11:28:56,660: 	 Will use CRAB configuration file crab_mc.py
+DEBUG 2019-02-21 11:28:56,660: 	 Loading CRAB configuration file.
+DEBUG 2019-02-21 11:29:01,772: 	 Will use CRAB PrivateMC plugin (i.e. will run a MC generation job type).
+DEBUG 2019-02-21 11:29:01,940: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:01,941: 	 Checking credentials
+DEBUG 2019-02-21 11:29:01,941: 	 Found proxy file /tmp/x509up_u92327
+DEBUG 2019-02-21 11:29:01,941: 	 Getting proxy life time left
+DEBUG 2019-02-21 11:29:03,370: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -timeleft
+ output : 41122
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:04,711: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -actimeleft
+ output : 41121
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:04,711: 	 Proxy lifetime 41122 secs is different from voms extension lifetime 41121 secs for proxy: /tmp/x509up_u92327
+DEBUG 2019-02-21 11:29:04,711: 	 Proxy valid for 11:25:21 hours
+DEBUG 2019-02-21 11:29:06,123: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u92327 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:06,327: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-21 11:29:06,454: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:06,455: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-21 11:29:06,455: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi_cmsweb.cern.ch for credential name
+DEBUG 2019-02-21 11:29:06,966: 	 Executing : 
+ command : myproxy-info -l e9ed08ae3e67a03e4db9d489b1351b281e6abeef -s myproxy.cern.ch
+ output : username: e9ed08ae3e67a03e4db9d489b1351b281e6abeef
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 558:52:50  (23.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:29:06,968: 	 Myproxy is valid: 2011970
+DEBUG 2019-02-21 11:29:06,968: 	 Command use: submit
+DEBUG 2019-02-21 11:29:06,968: 	 Options use: ['-c', 'crab_mc.py']
+DEBUG 2019-02-21 11:29:07,095: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-21 11:29:07,095: 	 Instance is prod
+DEBUG 2019-02-21 11:29:07,095: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-21 11:29:07,096: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-21 11:29:07,096: 	 Started submission
+DEBUG 2019-02-21 11:29:07,096: 	 Working on /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M
+DEBUG 2019-02-21 11:29:07,310: 	 Loading required information from the environment
+DEBUG 2019-02-21 11:29:07,310: 	 Found CMSSW_9_4_4 for slc6_amd64_gcc630 with base /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4
+DEBUG 2019-02-21 11:29:07,345: 	 UNIQUE NAME: tarUUID ee501a7f-d2ec-482f-9c6b-4dfcda444e28 
+DEBUG 2019-02-21 11:29:07,346: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'minBias_pythia8_MC_generation_1M'
+config.section_('JobType')
+config.JobType.psetName = 'MinBias_13TeV_config_test.py'
+config.JobType.pluginName = 'PrivateMC'
+config.section_('Data')
+config.Data.outputDatasetTag = 'MinBias_Pythia8_1MEvents'
+config.Data.publication = True
+config.Data.unitsPerJob = 100
+config.Data.splitting = 'EventBased'
+config.Data.outLFNDirBase = '/store/user/bjoshi/'
+config.Data.outputPrimaryDataset = 'MinBias_Pythia8_1MEvents'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.storageSite = 'T2_US_Florida'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2019-02-21 11:29:07,346: 	 self.config.JobType.psetName: MinBias_13TeV_config_test.py
+INFO 2019-02-21 11:29:07,347: 	 Importing CMSSW configuration MinBias_13TeV_config_test.py
+INFO 2019-02-21 11:29:10,746: 	 Finished importing CMSSW configuration MinBias_13TeV_config_test.py
+DEBUG 2019-02-21 11:29:10,746: 	 Writing CMSSW configuration to /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/inputs/PSet.py
+DEBUG 2019-02-21 11:29:11,202: 	 The following EDM output files will be collected: ['minbias.root']
+DEBUG 2019-02-21 11:29:11,202: 	 The following TFile output files will be collected: []
+DEBUG 2019-02-21 11:29:11,202: 	 The following user output files will be collected: []
+DEBUG 2019-02-21 11:29:11,202: 	 Loading required information from the environment
+DEBUG 2019-02-21 11:29:11,203: 	 Found CMSSW_9_4_4 for slc6_amd64_gcc630 with base /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4
+DEBUG 2019-02-21 11:29:11,203: 	 Making tarball in /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/inputs/ee501a7f-d2ec-482f-9c6b-4dfcda444e28default.tgz
+DEBUG 2019-02-21 11:29:11,266: 	 Checking directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/lib
+DEBUG 2019-02-21 11:29:11,267: 	 Adding directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/lib to tarball
+DEBUG 2019-02-21 11:29:11,932: 	 Checking directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/biglib
+DEBUG 2019-02-21 11:29:11,932: 	 Adding directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/biglib to tarball
+DEBUG 2019-02-21 11:29:11,934: 	 Checking directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/module
+DEBUG 2019-02-21 11:29:13,680: 	 Adding data directory /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/DsTau23Mu/T3MNtuple/interface to tarball
+DEBUG 2019-02-21 11:29:47,675: 	 Uploading archive /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/inputs/ee501a7f-d2ec-482f-9c6b-4dfcda444e28default.tgz (0.814453.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-02-21 11:29:48,066: 	 Loading required information from the environment
+DEBUG 2019-02-21 11:29:48,067: 	 Found CMSSW_9_4_4 for slc6_amd64_gcc630 with base /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4
+DEBUG 2019-02-21 11:29:48,067: 	 Making tarball in /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/inputs/debugFiles.tgz
+DEBUG 2019-02-21 11:29:48,073: 	 Uploading archive /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-02-21 11:29:48,177: 	 Result uploading input files: c03d9dd79a54674996419181479226e79f198f81e3351029c417dc87bf756c77.tar.gz 
+INFO 2019-02-21 11:29:48,177: 	 Sending the request to the server
+DEBUG 2019-02-21 11:29:48,178: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_US_Florida', 'algoargs': 100, 'cachefilename': 'c03d9dd79a54674996419181479226e79f198f81e3351029c417dc87bf756c77.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_4_4', 'edmoutfiles': ['minbias.root'], 'userfiles': [], 'primarydataset': 'MinBias_Pythia8_1MEvents', 'inputdata': '', 'lfn': '/store/user/bjoshi/', 'dryrun': 0, 'workflow': 'crab_minBias_pythia8_MC_generation_1M', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': 'f82522102ab4c80532892c61d15505439f6d651ab08a2c8d954057f8a90daaf9.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 1000, 'splitalgo': 'EventBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'PrivateMC', 'publishname2': 'MinBias_Pythia8_1MEvents'} 
+DEBUG 2019-02-21 11:29:48,178: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_US_Florida&algoargs=100&cachefilename=c03d9dd79a54674996419181479226e79f198f81e3351029c417dc87bf756c77.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_4_4&primarydataset=MinBias_Pythia8_1MEvents&inputdata=&lfn=%2Fstore%2Fuser%2Fbjoshi%2F&dryrun=0&workflow=crab_minBias_pythia8_MC_generation_1M&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=f82522102ab4c80532892c61d15505439f6d651ab08a2c8d954057f8a90daaf9.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc630&totalunits=1000&splitalgo=EventBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=PrivateMC&publishname2=MinBias_Pythia8_1MEvents&edmoutfiles=minbias.root
+DEBUG 2019-02-21 11:29:48,399: 	 Result: {u'result': [{u'RequestName': u'190221_102948:bjoshi_crab_minBias_pythia8_MC_generation_1M'}]}
+INFO 2019-02-21 11:29:48,403: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2019-02-21 11:29:48,403: 	 Task name: 190221_102948:bjoshi_crab_minBias_pythia8_MC_generation_1M
+INFO 2019-02-21 11:29:48,404: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2019-02-21 11:29:48,404: 	 About to return
+INFO 2019-02-21 11:29:48,407: 	 Log file is /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/crab.log
+DEBUG 2019-02-21 11:30:28,868: 	 Executing command: 'status'
+DEBUG 2019-02-21 11:30:28,868: 	 Found CRAB cache file /afs/cern.ch/user/b/bjoshi/.crab3
+DEBUG 2019-02-21 11:30:28,882: 	 Checking credentials
+DEBUG 2019-02-21 11:30:28,884: 	 Found proxy file /tmp/x509up_u92327
+DEBUG 2019-02-21 11:30:28,884: 	 Getting proxy life time left
+DEBUG 2019-02-21 11:30:30,401: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -timeleft
+ output : 41035
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:31,828: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -actimeleft
+ output : 41034
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:31,829: 	 Proxy lifetime 41035 secs is different from voms extension lifetime 41034 secs for proxy: /tmp/x509up_u92327
+DEBUG 2019-02-21 11:30:31,829: 	 Proxy valid for 11:23:54 hours
+DEBUG 2019-02-21 11:30:31,994: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:31,994: 	 Checking credentials
+DEBUG 2019-02-21 11:30:31,995: 	 Found proxy file /tmp/x509up_u92327
+DEBUG 2019-02-21 11:30:31,995: 	 Getting proxy life time left
+DEBUG 2019-02-21 11:30:33,425: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -timeleft
+ output : 41032
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:34,962: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u92327 -actimeleft
+ output : 41031
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:34,964: 	 Proxy lifetime 41032 secs is different from voms extension lifetime 41031 secs for proxy: /tmp/x509up_u92327
+DEBUG 2019-02-21 11:30:34,964: 	 Proxy valid for 11:23:51 hours
+DEBUG 2019-02-21 11:30:35,209: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-02-21 11:30:35,334: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:35,335: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-02-21 11:30:35,335: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi_cmsweb.cern.ch for credential name
+DEBUG 2019-02-21 11:30:35,770: 	 Executing : 
+ command : myproxy-info -l e9ed08ae3e67a03e4db9d489b1351b281e6abeef -s myproxy.cern.ch
+ output : username: e9ed08ae3e67a03e4db9d489b1351b281e6abeef
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 558:51:21  (23.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-02-21 11:30:35,771: 	 Myproxy is valid: 2011881
+DEBUG 2019-02-21 11:30:35,772: 	 Command use: status
+DEBUG 2019-02-21 11:30:35,772: 	 Options use: ['-d', 'crab_projects/crab_minBias_pythia8_MC_generation_1M/']
+DEBUG 2019-02-21 11:30:36,072: 	 CRABClient version: 3.3.1902.patch1
+DEBUG 2019-02-21 11:30:36,072: 	 Instance is prod
+DEBUG 2019-02-21 11:30:36,072: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-02-21 11:30:36,072: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-02-21 11:30:36,212: 	 Got information from server oracle database: {u'result': [u'190221_102948:bjoshi_crab_minBias_pythia8_MC_generation_1M', u'None', u'None', u'QUEUED', u'SUBMIT', u'2019-02-21 10:29:48.389262', u'None', u'None', u'None', u'CMSSW_9_4_4', u'slc6_amd64_gcc630', u'None', u'F', u'0', u'[]', u'[]', u'EventBased', u"{'splitOnRun': False, 'events_per_job': 100, 'halt_job_on_file_boundaries': False, 'runs': [], 'lumis': []}", u'c03d9dd79a54674996419181479226e79f198f81e3351029c417dc87bf756c77.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'bjoshi', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=bjoshi/CN=796100/CN=Bhargav Madhusudan Joshi', u'cms', u'None', u'None', u'MinBias_Pythia8_1MEvents-00000000000000000000000000000000', u'F', u'T2_US_Florida', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u'[]', u"['minbias.root']", u'PrivateMC', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'None', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0194.cern.ch', u'F', u'[]', u'T', u'/store/user/bjoshi/', u'F', u'None', u'F', u'None', u'MinBias_Pythia8_1MEvents', u'None', u'f82522102ab4c80532892c61d15505439f6d651ab08a2c8d954057f8a90daaf9.tar.gz', u'None', u'filetransfers', u'F', u'188.184.108.99', u'1000.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-02-21 11:30:36,213: 	 CRAB project directory:		/afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M
+INFO 2019-02-21 11:30:36,213: 	 Task name:			190221_102948:bjoshi_crab_minBias_pythia8_MC_generation_1M
+INFO 2019-02-21 11:30:36,213: 	 Grid scheduler - Task Worker:	crab3@vocms0194.cern.ch - crab-prod-tw01
+INFO 2019-02-21 11:30:36,215: 	 Status on the CRAB server:	QUEUED on command SUBMIT
+INFO 2019-02-21 11:30:36,215: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/190221_102948%3Abjoshi_crab_minBias_pythia8_MC_generation_1M
+INFO 2019-02-21 11:30:36,215: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=bjoshi&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=190221_102948%3Abjoshi_crab_minBias_pythia8_MC_generation_1M
+DEBUG 2019-02-21 11:30:36,215: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2019-02-21 11:30:36,257: 	 Log file is /afs/cern.ch/work/b/bjoshi/private/Analysis/Tools/workdir/CMSSW_9_4_4/src/SkimProduction/CRAB/crab_projects/crab_minBias_pythia8_MC_generation_1M/crab.log
