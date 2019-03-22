@@ -90,15 +90,14 @@ process.source = cms.Source("PoolSource",
 process.TFileService = cms.Service('TFileService',
                                    fileName = cms.string("DsT3MNtuple.root")
                                    )
-
-process.source.fileNames = ['/store/data/Run2017F/DoubleMuonLowMass/AOD/09May2018-v1/60001/6058D7E9-FEB0-E811-9911-001517642260.root']#/store/data/Run2017F/DoubleMuonLowMass/AOD/17Nov2017-v1/10000/EEC5ACC2-B802-E811-AF14-0CC47A0AD498.root'] # data file for debugs and test runsa
+process.source.fileNames = ['/store/data/Run2017F/DoubleMuonLowMass/AOD/17Nov2017-v1/10000/EEC5ACC2-B802-E811-AF14-0CC47A0AD498.root']
 
 
 ####################### TauNtuple ######################
 from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
 setupTauNtuple(process)
-
-
+process.T3MTree.DataMCType = cms.untracked.string('ds_tau')
+print process.T3MTree.DataMCType
 process.tagger = cms.Path(process.badGlobalMuonTagger)
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
 process.p = cms.Path(process.DsTauNtuple)
