@@ -1,0 +1,24 @@
+Setup your list of samples that you want to run as, for example:  inputFiles/Prod_26_03_2019.dat; 
+
+run ./configureJobs.py -h
+usage: configureJobs.py [-h] [-f INPUT_FILE] [-t TAG] [-p PROCESS]
+                        [-s SITE_RUN] [-o PATH_TO_STORE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f INPUT_FILE, --input-file INPUT_FILE
+                        input file; [Default: datasets.dat]
+  -t TAG, --tag TAG     Tag the production; [Default: 2019DataProduction]
+  -p PROCESS, --process PROCESS
+                        process name; [Default: 2019DataProduction]
+  -s SITE_RUN, --site-run SITE_RUN
+                        Site to run; [Default: T2_US_Florida]
+  -o PATH_TO_STORE, --path-to-store PATH_TO_STORE
+                        Path to store the output files; [Default:
+                        /store/user/cherepan]
+
+
+Important: 
+1) Take care about the TAG option and PATH_TO_STORE
+
+

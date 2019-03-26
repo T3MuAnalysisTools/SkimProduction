@@ -6,7 +6,7 @@ import sys
 
 options = VarParsing.VarParsing()
 options.register('globalTag',
-                 '94X_mc2017_realistic_v14', #default value
+                 '<GT>', #default value
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Global Tag")
@@ -96,8 +96,9 @@ process.source.fileNames = ['/store/data/Run2017F/DoubleMuonLowMass/AOD/17Nov201
 ####################### TauNtuple ######################
 from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
 setupTauNtuple(process)
-process.T3MTree.DataMCType = cms.untracked.string('ds_tau')
-print process.T3MTree.DataMCType
+process.T3MTree.DataMCType = cms.untracked.string('<DMCType>')
+process.T3MTree.doMC = cms.bool(<MC>)
+
 process.tagger = cms.Path(process.badGlobalMuonTagger)
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
 process.p = cms.Path(process.DsTauNtuple)
