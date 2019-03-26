@@ -20,7 +20,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             with open(runNtupleFileName, 'w') as file:
                 file.write(filedata)
         outputdatatag = prodtag+"_"+jobtag
-        crabname = "crab_"+jobtag+".py"
+        crabname = "crab_"+outputdatatag+".py"
         submitall.write("crab submit -c %s\n" % crabname)
         crabconf=open(crabname,"w")
         crabconf.write ("from WMCore.Configuration import Configuration  \n")
@@ -39,7 +39,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             crabconf.write ("config.Data.unitsPerJob = 100 \n")
         else:
             crabconf.write ("config.Data.splitting = 'FileBased' \n")
-            crabconf.write ("config.Data.unitsPerJob = 100 \n")
+            crabconf.write ("config.Data.unitsPerJob = 200 \n")
         crabconf.write ("config.Data.totalUnits = -1 \n")
         if "data" in dmctype:
             crabconf.write ("config.Data.lumiMask = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt' \n")
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     if os.path.isdir(crabJobsFolder):
         print "Folder %s already exists, please change tag name or delete it" % crabJobsFolder
         sys.exit()
-#    os.system ("voms-proxy-init -voms cms")
+    os.system ("voms-proxy-init -voms cms")
     DataSets = []
     GlobalTags = []
     DataMCTypes = []
