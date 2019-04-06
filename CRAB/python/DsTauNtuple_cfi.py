@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 
 T3MTree = cms.EDAnalyzer('T3MNtuple',
                          mid = cms.int32(15),
-                         MuonPtCut = cms.double(2.0),
+                         MuonPtCut = cms.double(1.0),
                          MuonEtaCut = cms.double(2.4),
                          TrackPtCut = cms.double(1.0),
                          TrackEtaCut = cms.double(2.4),
