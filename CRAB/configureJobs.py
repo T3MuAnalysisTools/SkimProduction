@@ -7,6 +7,7 @@ import argparse
 
 def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath):
     submitall=open("SubmitAllByCrab.sh","w")
+    reportall=open("ReportAllByCrab.sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
         runNtupleFileName = "runNtuple_"+str(dmctype)+".py"
         with open('runNtuple_template.py', 'r') as file :
@@ -22,6 +23,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         outputdatatag = prodtag+"_"+jobtag
         crabname = "crab_"+outputdatatag+".py"
         submitall.write("crab submit -c %s\n" % crabname)
+        reportall.write("crab report -d prodtag/%s\n" % crabname)
         crabconf=open(crabname,"w")
         crabconf.write ("from WMCore.Configuration import Configuration  \n")
         crabconf.write ("config = Configuration()  \n\n")
