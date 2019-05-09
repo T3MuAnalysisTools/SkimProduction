@@ -14,6 +14,7 @@ T3MTree = cms.EDAnalyzer('T3MNtuple',
                          doMuons = cms.bool(True), # do fillMuons
                          do3mutuple = cms.bool(True),
                          doMC = cms.bool(False),
+                         doFullMC = cms.bool(False),
                          doL1 = cms.bool(True),
                          doBJets = cms.bool(False),
                          doThreeMuons = cms.bool(True),
