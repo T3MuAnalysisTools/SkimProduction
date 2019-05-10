@@ -16,8 +16,13 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             filedata = filedata.replace('<DMCType>', dmctype)
             if "data"  in dmctype:  
                 filedata = filedata.replace('<MC>', str(False))
+                filedata = filedata.replace('<MCFull>', str(False))
+            elif "minbias"  in dmctype:  
+                filedata = filedata.replace('<MC>', str(True))
+                filedata = filedata.replace('<MCFull>', str(True))
             else:
                 filedata = filedata.replace('<MC>', str(True))
+                filedata = filedata.replace('<MCFull>', str(False))
             with open(runNtupleFileName, 'w') as file:
                 file.write(filedata)
         outputdatatag = prodtag+"_"+jobtag

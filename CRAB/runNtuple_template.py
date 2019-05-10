@@ -98,6 +98,7 @@ from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
 setupTauNtuple(process)
 process.T3MTree.DataMCType = cms.untracked.string('<DMCType>')
 process.T3MTree.doMC = cms.bool(<MC>)
+process.T3MTree.doFullMC = cms.bool(<MCFull>)
 
 process.tagger = cms.Path(process.badGlobalMuonTagger)
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
