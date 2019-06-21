@@ -43,7 +43,6 @@ DataMCType: ds_phipi
 Path: /DsPhiPi/fsimone-crab_crab_DsPhiPi_13TeV_RECO-c3763c515b5d7d94a8137c090655e1bb/USER
 GT: 94X_mc2017_realistic_v14
 
-
 DataMCType: minbias
 Path: /MinBias_TuneCP5_inelasticON_13TeV-pythia8/fsimone-crab_MinimumBias_RECO-d47e538685eb715eb4eebd24a8285eef/USER
 GT: 94X_mc2017_realistic_v14
