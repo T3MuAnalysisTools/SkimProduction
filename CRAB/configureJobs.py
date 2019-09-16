@@ -34,7 +34,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.section_(\"General\")  \n")
         crabconf.write ("config.General.requestName = '"+jobtag+"'\n")
         crabconf.write ("config.General.workArea =  '%s' \n\n" %  prodtag)
-        crabconf.write ("config.section_(\"Job1Type\") \n")
+        crabconf.write ("config.section_(\"JobType\") \n")
         crabconf.write ("config.JobType.pluginName = 'Analysis' \n")
         crabconf.write ("config.JobType.psetName = '%s'  \n\n"  % runNtupleFileName)
         crabconf.write ("config.section_(\"Data\")  \n\n")
@@ -92,8 +92,6 @@ if __name__ == "__main__":
             if "<GT>" in line:
                 GT = line.split(":")
             if "Path" in line:
-                print line
-                print line.split(":")[1].strip()
                 DataSets.append(line.split(":")[1].strip())
                 JobTags.append((line.split(":")[1]).split("/")[1].strip()+"__"+(line.split(":")[1]).split("/")[2].strip())
 
@@ -103,7 +101,6 @@ if __name__ == "__main__":
             if "Prod" in line:
                 PI = line.split(":")
                 ProdInstance.append(line.split(":")[1].strip())
-                print PI
             if "GT" in line:
                 GlobalTags.append(line.split(":")[1].strip())
     sizelist=[len(DataSets),len(JobTags), len(DataMCTypes), len(ProdInstance), len(GlobalTags)]
