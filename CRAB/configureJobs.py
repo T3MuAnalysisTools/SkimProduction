@@ -4,7 +4,6 @@ import os
 import sys
 import argparse
 
-
 def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath):
     submitall=open("SubmitAllByCrab.sh","w")
     reportall=open("ReportAllByCrab.sh","w")
@@ -35,7 +34,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.section_(\"General\")  \n")
         crabconf.write ("config.General.requestName = '"+jobtag+"'\n")
         crabconf.write ("config.General.workArea =  '%s' \n\n" %  prodtag)
-        crabconf.write ("config.section_(\"JobType\") \n")
+        crabconf.write ("config.section_(\"Job1Type\") \n")
         crabconf.write ("config.JobType.pluginName = 'Analysis' \n")
         crabconf.write ("config.JobType.psetName = '%s'  \n\n"  % runNtupleFileName)
         crabconf.write ("config.section_(\"Data\")  \n\n")
@@ -64,7 +63,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--input-file",help="input file; [Default: %(default)s] ", action="store", default = 'datasets.dat')
     parser.add_argument("-t", "--tag",help="Tag the production; [Default: %(default)s] ",  type=str, action="store", default = '2019DataProduction')
-#    parser.add_argument("-p", "--process",help="process name; [Default: %(default)s] ",  type=str, action="store", default = '2019DataProduction')
     parser.add_argument("-s", "--site-run",help="Site to run; [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
     parser.add_argument("-o", "--path-to-store",help="Path to store the output files; [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
     args = parser.parse_args()
@@ -81,9 +79,9 @@ if __name__ == "__main__":
     os.system ("voms-proxy-init -voms cms")
     DataSets = []
     GlobalTags = []
+    ProdInstance = []
     DataMCTypes = []
     JobTags = []
-    ProdInstance = []            
     with open(datasetsFile) as fIn:
         for line in fIn:
             line = line.strip()
@@ -94,14 +92,18 @@ if __name__ == "__main__":
             if "<GT>" in line:
                 GT = line.split(":")
             if "Path" in line:
+                print line
+                print line.split(":")[1].strip()
                 DataSets.append(line.split(":")[1].strip())
-                JobTags.append((line.split(":")[1]).split("/")[2].strip())
+                JobTags.append((line.split(":")[1]).split("/")[1].strip()+"__"+(line.split(":")[1]).split("/")[2].strip())
+
             if "DataMCType" in line:
                 DataMCTypes.append(line.split(":")[1].strip())
-                if "data" in line.split(":")[1]:
-                    ProdInstance.append("global")
-                else:
-                    ProdInstance.append("phys03")
+
+            if "Prod" in line:
+                PI = line.split(":")
+                ProdInstance.append(line.split(":")[1].strip())
+                print PI
             if "GT" in line:
                 GlobalTags.append(line.split(":")[1].strip())
     sizelist=[len(DataSets),len(JobTags), len(DataMCTypes), len(ProdInstance), len(GlobalTags)]
