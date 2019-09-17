@@ -93,7 +93,11 @@ if __name__ == "__main__":
                 GT = line.split(":")
             if "Path" in line:
                 DataSets.append(line.split(":")[1].strip())
-                JobTags.append((line.split(":")[1]).split("/")[1].strip()+"__"+(line.split(":")[1]).split("/")[2].strip())
+                JT=(line.split(":")[1]).split("/")[1].strip()+"__"+(line.split(":")[1]).split("/")[2].strip()
+                if len(JT) > 100:
+                    JobTags.append( JT[:99])
+                else:
+                    JobTags.append( JT)
 
             if "DataMCType" in line:
                 DataMCTypes.append(line.split(":")[1].strip())
