@@ -45,7 +45,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             crabconf.write ("config.Data.unitsPerJob = 100 \n")
         else:
             crabconf.write ("config.Data.splitting = 'FileBased' \n")
-            crabconf.write ("config.Data.unitsPerJob = 200 \n")
+            crabconf.write ("config.Data.unitsPerJob = 5 \n")
         crabconf.write ("config.Data.totalUnits = -1 \n")
         if "data" in dmctype:
             crabconf.write ("config.Data.lumiMask = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt' \n")
