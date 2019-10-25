@@ -4,7 +4,6 @@ GT: 94X_mc2017_realistic_v12
 Prod: global
 
 
-
 DataMCType: ds_phipi
 Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
 GT: 94X_mc2017_realistic_v14
@@ -23,7 +22,7 @@ GT: 94X_mc2017_realistic_v14
 Prod:  global
 
 
-DataMCTypes: bp_tau
+DataMCTypes: b0_tau
 Path: /BuToTau_To3Mu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
 GT: 94X_mc2017_realistic_v14
 Prod:  global
@@ -34,11 +33,11 @@ Path: /DsTau3Mu/fsimone-crab_crab_DsTau3Mu__13TeV_MC2016_RECO_v02-c3763c515b5d7d
 GT: 94X_mc2017_realistic_v14
 Prod: phys03
 
+
 DataMCType: ds_tau
 Path: /DsTau3Mu/fsimone-crab_crab_DsTau3Mu__13TeV_MC2016_RECO-c3763c515b5d7d94a8137c090655e1bb/USER
 GT: 94X_mc2017_realistic_v14
 Prod: phys03
-
 
 
 DataMCType: b0_tau
@@ -47,18 +46,13 @@ GT: 94X_mc2017_realistic_v14
 Prod: phys03
 
 
-
-
 DataMCType: bp_tau
 Path: /BpTau3Mu/fsimone-crab_crab_BpTau3Mu_13TeV_RECO-c3763c515b5d7d94a8137c090655e1bb/USER
 GT: 94X_mc2017_realistic_v14
 Prod: phys03
 
 
-
 DataMCType: ds_phipi
 Path: /DsPhiPi/fsimone-crab_crab_DsPhiPi_13TeV_RECO-c3763c515b5d7d94a8137c090655e1bb/USER
 GT: 94X_mc2017_realistic_v14
 Prod: phys03
-
-
