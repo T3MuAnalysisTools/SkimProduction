@@ -1,0 +1,124 @@
+DataMCType: data
+Path: /ParkingBPH1/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH1/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH1/Run2018C-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH1/Run2018D-05May2019promptD-v1/AOD
+GT: 102X_dataRun2_Prompt_v14
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH2/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH2/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH2/Run2018C-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH2/Run2018D-05May2019promptD-v1/AOD
+GT: 102X_dataRun2_Prompt_v14
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH3/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH3/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH3/Run2018C-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH3/Run2018D-05May2019promptD-v1/AOD
+GT: 102X_dataRun2_Prompt_v14
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH4/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH4/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH4/Run2018C-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH4/Run2018D-05May2019promptD-v1/AOD
+GT: 102X_dataRun2_Prompt_v14
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH5/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH5/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH5/Run2018C-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH6/Run2018A-05May2019-v1/AOD
+GT: 102X_dataRun2_v11
+Prod: global
+
+
+DataMCType: data
+Path: /ParkingBPH6/Run2018B-05May2019-v2/AOD
+GT: 102X_dataRun2_v11
+Prod: global
