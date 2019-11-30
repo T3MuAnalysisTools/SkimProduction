@@ -8,3 +8,10 @@ DataMCTypes: tau_3mu2nu
 Path: /DsTau3Mu2Nu_PHSP/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-c5ffe086db9ac96902dde93cd44a5aa0/USER
 GT: 94X_mc2017_realistic_v14
 Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /QCD_DoubleMu4/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-c5ffe086db9ac96902dde93cd44a5aa0/USER
+GT: 94X_mc2017_realistic_v14
+Prod: phys03
+
