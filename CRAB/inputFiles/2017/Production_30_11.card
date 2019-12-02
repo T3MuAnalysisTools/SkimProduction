@@ -33,7 +33,7 @@ Prod: global
 
 
 DataMCType: ds_phipi
-Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
+Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v2/AODSIM
 GT: 94X_mc2017_realistic_v14
 Prod: global
 
