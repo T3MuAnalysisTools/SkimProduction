@@ -34,6 +34,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.section_(\"General\")  \n")
         crabconf.write ("config.General.requestName = '"+jobtag+"'\n")
         crabconf.write ("config.General.workArea =  '%s' \n\n" %  prodtag)
+        crabconf.write ("config.General.workArea = True")
         crabconf.write ("config.section_(\"JobType\") \n")
         crabconf.write ("config.JobType.pluginName = 'Analysis' \n")
         crabconf.write ("config.JobType.psetName = '%s'  \n\n"  % runNtupleFileName)
