@@ -36,6 +36,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.General.workArea =  '%s' \n" %  prodtag)
         crabconf.write ("config.General.transferLogs = True \n\n")
         crabconf.write ("config.section_(\"JobType\") \n")
+        crabconf.write ("config.JobType.allowUndistributedCMSSW = True \n")
         crabconf.write ("config.JobType.pluginName = 'Analysis' \n")
         crabconf.write ("config.JobType.psetName = '%s'  \n\n"  % runNtupleFileName)
         crabconf.write ("config.section_(\"Data\")  \n\n")
