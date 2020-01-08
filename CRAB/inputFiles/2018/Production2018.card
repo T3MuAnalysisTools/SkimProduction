@@ -35,8 +35,16 @@ GT: 101X_upgrade2018_realistic_v7
 Prod: phys03
 
 
+DataMCTypes: b0_tau
+Path: /BdTau3Mu/bjoshi-CRAB3_MC2018_BdTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 101X_upgrade2018_realistic_v7
+Prod:  phys03
 
 
+DataMCTypes: bp_tau
+Path: /BuTau3Mu/bjoshi-CRAB3_MC2018_BuTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 101X_upgrade2018_realistic_v7
+Prod:  phys03
 
 
 
