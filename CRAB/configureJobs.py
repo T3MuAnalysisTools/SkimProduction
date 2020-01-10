@@ -57,6 +57,8 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.Data.outLFNDirBase = '%s' \n" % OutputPath)
         crabconf.write ("config.Data.outputDatasetTag = '%s' \n\n" % outputdatatag )
         crabconf.write ("config.section_(\"Site\") \n")
+        crabconf.write ("#config.Site.whitelist = ['T2_US_Wisconsin','T2_US_Purdue','T1_US_FNAL'] \n" )
+        crabconf.write ("#config.Data.ignoreLocality = True \n" )
         crabconf.write ("config.Site.storageSite = '%s' \n" % Site)
         
 
