@@ -4,7 +4,7 @@ import os
 import sys
 import argparse
 
-def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath):
+def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath, LumiMask):
     submitall=open("SubmitAllByCrab.sh","w")
     reportall=open("ReportAllByCrab.sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
@@ -50,9 +50,9 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             crabconf.write ("config.Data.unitsPerJob = 5 \n")
         crabconf.write ("config.Data.totalUnits = -1 \n")
         if "data" in dmctype:
-            crabconf.write ("config.Data.lumiMask = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt' \n")
+            crabconf.write ("config.Data.lumiMask = '%s' \n" % LumiMask)
         else:
-            crabconf.write ("#config.Data.lumiMask = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt' \n")
+            crabconf.write ("#config.Data.lumiMask = '%s' \n" % LumiMask)
         crabconf.write ("config.Data.publication = True \n")
         crabconf.write ("config.Data.outLFNDirBase = '%s' \n" % OutputPath)
         crabconf.write ("config.Data.outputDatasetTag = '%s' \n\n" % outputdatatag )
@@ -67,6 +67,7 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--tag",help="Tag the production; [Default: %(default)s] ",  type=str, action="store", default = '2019DataProduction')
     parser.add_argument("-s", "--site-run",help="Site to run; [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
     parser.add_argument("-o", "--path-to-store",help="Path to store the output files; [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
+    parser.add_argument("-j", "--json",help="LumiMask JSON file; [Default: %(default)s] ",  type=str, action="store", default = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt')
     args = parser.parse_args()
 
     datasetsFile = args.input_file
@@ -117,7 +118,7 @@ if __name__ == "__main__":
     print "Data/MC Sample to be configured: "
     for n in DataSets:
         print "--->  ", n
-    setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags,args.tag,args.site_run, args.path_to_store)   
+    setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags,args.tag,args.site_run, args.path_to_store,args.json)   
 
 
 

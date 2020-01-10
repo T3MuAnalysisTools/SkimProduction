@@ -1,49 +1,49 @@
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2018A-17Sep2018-v1/AOD
-GT: 102X_dataRun2_v11
+GT: 102X_dataRun2_v12
 Prod: global
 
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2018B-17Sep2018-v1/AOD
-GT: 102X_dataRun2_v11
+GT: 102X_dataRun2_v12
 Prod: global
 
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2018C-17Sep2018-v1/AOD
-GT: 102X_dataRun2_v11
+GT: 102X_dataRun2_v12
 Prod: global
 
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2018D-PromptReco-v2/AOD
-GT: 102X_dataRun2_v11
+GT: 102X_dataRun2_v12
 Prod: global
 
 
 DataMCTypes: ds_etamu
 Path: /DsEtaMuNu_EtaMuMuGamma/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-c5ffe086db9ac96902dde93cd44a5aa0/USER
-GT:101X_upgrade2018_realistic_v7
+GT:102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
 
 DataMCTypes: ds_tau
 Path: /DsToTau_TauTo3Mu/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-87600497c2c6a5767aee5d92666e59c3/USER
-GT: 101X_upgrade2018_realistic_v7
+GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
 DataMCTypes: b0_tau
 Path: /BdTau3Mu/bjoshi-CRAB3_MC2018_BdTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
-GT: 101X_upgrade2018_realistic_v7
+GT: 102X_upgrade2018_realistic_v20
 Prod:  phys03
 
 
 DataMCTypes: bp_tau
 Path: /BuTau3Mu/bjoshi-CRAB3_MC2018_BuTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
-GT: 101X_upgrade2018_realistic_v7
+GT: 102X_upgrade2018_realistic_v20
 Prod:  phys03
 
 
