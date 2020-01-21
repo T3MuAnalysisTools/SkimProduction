@@ -7,6 +7,7 @@ import argparse
 def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath, LumiMask):
     submitall=open("SubmitAllByCrab.sh","w")
     reportall=open("ReportAllByCrab.sh","w")
+    statusall=open("CheckStatusAllByCrab.sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
         runNtupleFileName = "runNtuple_"+str(dmctype)+".py"
         with open('runNtuple_template.py', 'r') as file :
@@ -27,7 +28,8 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         outputdatatag = prodtag+"_"+jobtag
         crabname = "crab_"+outputdatatag+".py"
         submitall.write("crab submit -c %s\n" % crabname)
-        reportall.write("crab report -d prodtag/%s\n" % crabname)
+        reportall.write("crab report "+prodtag+"/%s\n" % jobtag)
+        statusall.write("crab status -d "+prodtag+"/%s --long\n" % jobtag)
         crabconf=open(crabname,"w")
         crabconf.write ("from WMCore.Configuration import Configuration  \n")
         crabconf.write ("config = Configuration()  \n\n")
@@ -124,5 +126,9 @@ if __name__ == "__main__":
 
 
 
-    print "\n\nDo source SubmitAllByCrab.sh  to submit all jobs \n" 
-    print "Run a small scale job before submitting ! \n" 
+    print "\n\nDo 'source SubmitAllByCrab.sh'  to submit all jobs" 
+    print "Do 'source CheckStatusAllByCrab.sh'  to check the status of all jobs" 
+    print "Do 'source ReportAllByCrab.sh'  to report  all jobs " 
+    print "\nFor help with crab3  consult with  https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3AdvancedTutorial  \n\n"
+#    print "Run a small scale job before submitting ! \n" 
+
