@@ -8,6 +8,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
     submitall=open("SubmitAllByCrab.sh","w")
     reportall=open("ReportAllByCrab.sh","w")
     statusall=open("CheckStatusAllByCrab.sh","w")
+    resubmitall=open("ResubmitAllByCrab.sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
         runNtupleFileName = "runNtuple_"+str(dmctype)+".py"
         with open('runNtuple_template.py', 'r') as file :
@@ -28,7 +29,8 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         outputdatatag = prodtag+"_"+jobtag
         crabname = "crab_"+outputdatatag+".py"
         submitall.write("crab submit -c %s\n" % crabname)
-        reportall.write("crab report "+prodtag+"/crab_"+"/%s\n" % jobtag)
+        reportall.write("crab report "+prodtag+"/crab_"+"%s\n" % jobtag)
+        resubmitall.write("crab resubmit "+prodtag+"/crab_"+"%s\n" % jobtag)
         statusall.write("crab status -d "+prodtag+"/crab_"+"%s --long\n" % jobtag)
         crabconf=open(crabname,"w")
         crabconf.write ("from WMCore.Configuration import Configuration  \n")
