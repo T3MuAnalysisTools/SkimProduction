@@ -4,6 +4,6 @@
   pip install --install-option="--prefix=$HOME/.local" brilws
   pip show brilws
   brilcalc --version
-  brilcalc lumi -b "STABLE BEAMS" -u /fb -i processedLumis.json --normtag /afs/cern.ch/user/l/lumipro/public/normtag_file/normtag_DATACERT.json
+#  brilcalc lumi -b "STABLE BEAMS" -u /fb -i processedLumis.json --normtag /afs/cern.ch/user/l/lumipro/public/normtag_file/normtag_DATACERT.json
 
 
