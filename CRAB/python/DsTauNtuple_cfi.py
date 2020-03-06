@@ -21,6 +21,7 @@ T3MTree = cms.EDAnalyzer('T3MNtuple',
                          doTwoMuonsAndTrack = cms.bool(True),
                          TriggerMuonMatchingdr = cms.untracked.double(0.3),
                          DataMCType    = cms.untracked.string("ds_tau"), #Defaut: data. Have a look at src/DataMCType.cc for available types
+                         WhatData = cms.untracked.string("2018"),
                          muons = cms.InputTag("muons"),
                          pvs = cms.InputTag("offlinePrimaryVertices"),
                          svs = cms.InputTag("inclusiveSecondaryVertices"),
