@@ -43,8 +43,4 @@ Prod:  phys03
 
 
 
-DataMCTypes: b0_tau
-Path: /B0ToTau_TauTo3Mu/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-87600497c2c6a5767aee5d92666e59c3/USER
-GT: 102X_upgrade2018_realistic_v20
-Prod:  phys03
 
