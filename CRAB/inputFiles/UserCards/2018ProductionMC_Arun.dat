@@ -1,0 +1,25 @@
+
+
+DataMCTypes: ds_tau
+Path: /DsToTau_TauTo3Mu_March2020/wangjian-RunIIAutumn18DRPremix-102X-2f1667a4ab974bdf4cb2916f291c3603/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: b0_tau
+Path: /B0ToTau_TauTo3Mu/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod:  phys03
+
+
+
+DataMCTypes: ds_phipi
+Path: /DsToPhiMuMuPi_CMSSW_10_2_X_2018/rosma-DsToPhiMuMuPi_CMSSW_10_2_X_2018_RECO_v1-fd6b33a813d01b1040d615bf889c29c4/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod:  phys03
+
+DataMCTypes: ds_etamu
+Path: /DsEtaMuNu_EtaMuMuGamma/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-c5ffe086db9ac96902dde93cd44a5aa0/USER
+GT: 94X_mc2017_realistic_v14
+Prod: phys03
+
