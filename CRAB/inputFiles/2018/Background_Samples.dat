@@ -17,6 +17,16 @@ Prod: phys03
 
 
 
+
+### min bias two
+DataMCTypes: minbias
+Path: /minbias_PythiaBBarCCbarThreeMuMass_GEN_31_03_2020/cherepan-minbias_PythiaBBarCCbarThreeMuMass_GEN_31_03_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
 DataMCTypes: ds_muphimumugamma
 Path: /DMuNuPhi_MuMuGamma_GEN_26_03_2020/cherepan-DMuNuPhi_MuMuGamma_GEN_26_03_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
