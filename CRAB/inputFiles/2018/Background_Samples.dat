@@ -39,3 +39,18 @@ Path: /DMuNuOmega_MuMuPi0_GEN_26_03_2020/cherepan-DMuNuOmega_MuMuPi0_GEN_26_03_2
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
+
+
+DataMCTypes: ds_muetamumugamma
+Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_26_03_2020/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_26_03_2020_AOD_v28_04_2020-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: ds_muetaprimemumugamma
+Path: /DMuNuEtaPrime_MuMuGamma_GEN_Generation_27_04_20/mmadhu-DMuNuEtaPrime_MuMuGamma_GEN_Generation_27_04_20_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
