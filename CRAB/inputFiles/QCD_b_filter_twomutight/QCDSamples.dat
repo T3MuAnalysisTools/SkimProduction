@@ -8,11 +8,12 @@ Path: /Pythia_BQuarkFilterTwoMuon_GEN_July01Prod/mmadhu-Pythia_BQuarkFilterTwoMu
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
-
-
 DataMCTypes: minbias
 Path: /Pythia_BQuarkFilterTwoMuon_GEN_ValdimirGenerationRoundI_28June/cherepan-Pythia_BQuarkFilterTwoMuon_GEN_ValdimirGenerationRoundI_28June_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
-
+DataMCTypes: minbias
+Path: /Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
