@@ -13,6 +13,21 @@ Path: /Pythia_BQuarkFilterTwoMuon_GEN_ValdimirGenerationRoundI_28June/cherepan-P
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
+
+DataMCTypes: minbias  ### 70% completed at  28/07/2020
+Path: /Pythia_BQuarkFilterTwoMuon_GEN_RoundII/cherepan-Pythia_BQuarkFilterTwoMuon_GEN_RoundII_v3_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+DataMCTypes: ds_muetamumugamma
+Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_v3_28June_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
 DataMCTypes: minbias
 Path: /Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
