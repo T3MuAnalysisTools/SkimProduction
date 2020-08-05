@@ -3,10 +3,12 @@ Path: /minbias_PythiaBBarCCbarThreeMuMass_GEN_June20Production/mmadhu-minbias_Py
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
+
 DataMCTypes: minbias
 Path: /Pythia_BQuarkFilterTwoMuon_GEN_July01Prod/mmadhu-Pythia_BQuarkFilterTwoMuon_GEN_July01Prod_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
+
 
 DataMCTypes: minbias
 Path: /Pythia_BQuarkFilterTwoMuon_GEN_ValdimirGenerationRoundI_28June/cherepan-Pythia_BQuarkFilterTwoMuon_GEN_ValdimirGenerationRoundI_28June_AOD-87600497c2c6a5767aee5d92666e59c3/USER
@@ -20,15 +22,31 @@ GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
-
-
-DataMCTypes: ds_muetamumugamma
-Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_v3_28June_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+DataMCTypes: minbias
+Path: /Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
 DataMCTypes: minbias
-Path: /Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_09_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+/Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_22_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_22_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: minbias
+/Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_21_07_2020/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_21_07_2020_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: minbias
+/Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_26_07_2020_v2/bjoshi-Pythia_BQuarkFilterTwoMuon_GEN_BhargavGeneration_26_07_2020_v2_AOD-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: ds_muetamumugamma
+Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_v3_28June_AOD-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
