@@ -1,49 +1,49 @@
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2017B-17Nov2017-v1/AOD
-GT: 92X_dataRun2_Prompt_v5
+GT: 102X_dataRun2_v13
 Prod: global
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2017C-17Nov2017-v1/AOD
-GT: 92X_dataRun2_Prompt_v5
+GT: 102X_dataRun2_v13
 Prod: global
 
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2017D-17Nov2017-v1/AOD
-GT: 92X_dataRun2_Prompt_v5
+GT: 102X_dataRun2_v13
 Prod: global
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2017E-17Nov2017-v1/AOD
-GT: 92X_dataRun2_Prompt_v5
+GT: 102X_dataRun2_v13
 Prod: global
 
 DataMCType: data
 Path: /DoubleMuonLowMass/Run2017F-17Nov2017-v1/AOD
-GT: 92X_dataRun2_Prompt_v5
+GT: 102X_dataRun2_v13
 Prod: global
 
 
 DataMCType: ds_tau
 Path: /DsToTau_To3Mu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
-GT: 94X_mc2017_realistic_v12
+GT: 102X_mc2017_realistic_v8
 Prod: global
 
 
 DataMCType: ds_phipi
 Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v2/AODSIM
-GT: 94X_mc2017_realistic_v14
+GT: 102X_mc2017_realistic_v8
 Prod: global
 
 
 DataMCTypes: b0_tau
 Path: /BdToTau_To3Mu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
-GT: 94X_mc2017_realistic_v14
+GT: 102X_mc2017_realistic_v8
 Prod:  global
 
 
 DataMCTypes: bp_tau
 Path: /BuToTau_To3Mu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v1/AODSIM
-GT: 94X_mc2017_realistic_v14
+GT: 102X_mc2017_realistic_v8
 Prod:  global
