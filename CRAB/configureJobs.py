@@ -4,26 +4,35 @@ import os
 import sys
 import argparse
 
-def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath, LumiMask):
+def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath, LumiMask, DataTier):
     submitall=open("SubmitAllByCrab.sh","w")
     reportall=open("ReportAllByCrab.sh","w")
     statusall=open("CheckStatusAllByCrab.sh","w")
     resubmitall=open("ResubmitAllByCrab.sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
         runNtupleFileName = "runNtuple_"+str(dmctype)+".py"
-        with open('runNtuple_template.py', 'r') as file :
+        template_file = ''
+        if (DataTier == 'AOD'): template_file = 'runNtuple_template.py'
+        elif (DataTier == 'MINIAOD'): template_file = 'runNtuple_template_miniaod.py'
+        else:
+            sys.exit('illegal data format!!! Specify either AOD or MINIAOD')
+        with open(template_file , 'r') as file :
             filedata = file.read()
             filedata = filedata.replace('<GT>', gt)
             filedata = filedata.replace('<DMCType>', dmctype)
             if "data"  in dmctype:  
                 filedata = filedata.replace('<MC>', str(False))
                 filedata = filedata.replace('<MCFull>', str(False))
+                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates::RECO')
+                filedata = filedata.replace('<LostTrackTag>', 'lostTracks::RECO')
             elif "minbias"  in dmctype:  
                 filedata = filedata.replace('<MC>', str(True))
                 filedata = filedata.replace('<MCFull>', str(True))
             else:
                 filedata = filedata.replace('<MC>', str(True))
                 filedata = filedata.replace('<MCFull>', str(False))
+                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates::PAT')
+                filedata = filedata.replace('<LostTrackTag>', 'lostTracks::PAT')
             with open(runNtupleFileName, 'w') as file:
                 file.write(filedata)
         outputdatatag = prodtag+"_"+jobtag
@@ -74,6 +83,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--site-run",help="Site to run; [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
     parser.add_argument("-o", "--path-to-store",help="Path to store the output files; [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
     parser.add_argument("-j", "--json",help="LumiMask JSON file; [Default: %(default)s] ",  type=str, action="store", default = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt')
+    parser.add_argument("-d", "--data-tier",help="Data tier of the input fies; [Default: %(default)s]", type=str, action="store", default = 'AOD')
     args = parser.parse_args()
 
     datasetsFile = args.input_file
@@ -124,7 +134,7 @@ if __name__ == "__main__":
     print "Data/MC Sample to be configured: "
     for n in DataSets:
         print "--->  ", n
-    setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags,args.tag,args.site_run, args.path_to_store,args.json)   
+    setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags,args.tag,args.site_run, args.path_to_store,args.json, args.data_tier)   
 
 
 
