@@ -1,6 +1,6 @@
 Setup your list of samples that you want to run as, for example:  inputFiles/Prod_26_03_2019.dat; 
 
-
+```
 usage: configureJobs.py [-h] [-f INPUT_FILE] [-t TAG] [-s SITE_RUN]
                         [-o PATH_TO_STORE] [-j JSON] [-d DATA_TIER]
 
@@ -19,7 +19,7 @@ optional arguments:
   -d DATA_TIER, --data-tier DATA_TIER
                         Data tier of the input fies; [Default: AOD]
 
-
+```
 Important: 
 1) Take care about the TAG option and PATH_TO_STORE
 
