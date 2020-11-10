@@ -1,0 +1,22 @@
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018A-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018B-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018C-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018D-PromptReco-v2/MINIAOD
+GT: 102X_dataRun2_Prompt_v16
+Prod: global
