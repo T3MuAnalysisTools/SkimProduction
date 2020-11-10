@@ -1,11 +1,8 @@
 Setup your list of samples that you want to run as, for example:  inputFiles/Prod_26_03_2019.dat; 
 
 
-
-
-run ./configureJobs.py -h
 usage: configureJobs.py [-h] [-f INPUT_FILE] [-t TAG] [-s SITE_RUN]
-                        [-o PATH_TO_STORE] [-j JSON]
+                        [-o PATH_TO_STORE] [-j JSON] [-d DATA_TIER]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -19,6 +16,8 @@ optional arguments:
                         /store/user/cherepan]
   -j JSON, --json JSON  LumiMask JSON file; [Default: Cert_294927-306462_13TeV
                         _PromptReco_Collisions17_JSON.txt]
+  -d DATA_TIER, --data-tier DATA_TIER
+                        Data tier of the input fies; [Default: AOD]
 
 
 Important: 
