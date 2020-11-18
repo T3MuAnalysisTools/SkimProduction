@@ -1,0 +1,13 @@
+crab_Production*py
+crab_Production*pyc
+runNtuple_b0_tau.py
+runNtuple_bp_tau.py
+runNtuple_data.py
+runNtuple_ds_phipi.py
+runNtuple_ds_tau.py
+DsT3MNtuple.root
+Production*/
+ReportAllByCrab.sh
+ResubmitAllByCrab.sh
+SubmitAllByCrab.sh
+CheckStatusAllByCrab.sh
