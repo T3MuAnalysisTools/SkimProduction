@@ -32,6 +32,12 @@ GT: 94X_mc2017_realistic_v17
 Prod: global
 
 
+DataMCType: ds_tau
+Path: /DsToTau_To3Mu_ext_November2020/wangjianRunIIFall17MiniAODv2_PrivateMC-5d5f1e993523bf0f7b3437d82b69a9cf/USER
+GT: 94X_mc2017_realistic_v17
+Prod: global
+
+
 DataMCType: ds_phipi
 Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/RunIIFall17DRPremix-PU2017_94X_mc2017_realistic_v11-v2/AODSIM
 GT: 94X_mc2017_realistic_v17
