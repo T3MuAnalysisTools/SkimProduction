@@ -29,11 +29,28 @@ GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
+
+DataMCTypes: ds_tau
+Path: /DsToTau_TauTo3Mu_November2020/wangjian-RunIIAutumn18MiniAOD-102Xc64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
 DataMCTypes: b0_tau
 Path: /B0ToTau_TauTo3Mu/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-87600497c2c6a5767aee5d92666e59c3/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod:  phys03
 
+DataMCTypes: bp_tau
+Path: /BuTau3Mu/bjoshi-CRAB3_MC2018_BuTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod:  phys03
+
+
+DataMCTypes: bp_tau
+Path: /BpToTau_TauTo3Mu_November2020/wangjian-RunIIAutumn18MiniAOD-102Xc64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod:  phys03
 
 
 DataMCTypes: ds_phipi
