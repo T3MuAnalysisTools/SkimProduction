@@ -1,0 +1,46 @@
+DataMCTypes: minbias
+Path: /BsToPiPi_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v1/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BsToKK_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BsToKK_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BdToKPi_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BdToKPi_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BdToKK_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /BdToPiPi_BMuonFilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/RunIIAutumn18DRPremix-102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: minbias
+Path: /MinBias_TuneCP5_13TeV-pythia8/RunIIAutumn18RECOBParking-PUPoissonAve20_BParking_102X_upgrade2018_realistic_v15-v2/AODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03

@@ -100,9 +100,9 @@ process.TFileService = cms.Service('TFileService',
 
 process.source.fileNames = ['/store/data/Run2018D/DoubleMuonLowMass/MINIAOD/PromptReco-v2/000/325/159/00000/1403B072-371A-764C-9B25-A172D8B1A884.root'] #data
 #process.source.fileNames = [''] #minbias
-#process.source.fileNames = [''] #ds_tau
+#process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_144.root'] #ds_tau
 #process.source.fileNames = [''] #bd_tau
-#process.source.fileNames = [''] #bu_tau
+#process.source.fileNames = ['/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_339.root'] #bu_tau
 #process.source.fileNames = ['/store/mc/RunIIFall17MiniAODv2/DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/50000/76D80325-41C0-E911-9905-AC1F6BAC7C0A.root'] #ds_phipi
 
 ####################### TauNtuple (MINIAOD version) ######################
