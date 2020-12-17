@@ -1,0 +1,24 @@
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2017B-09Aug2019_UL2017-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2017C-09Aug2019_UL2017-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2017D-09Aug2019_UL2017-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2017E-09Aug2019_UL2017-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2017F-09Aug2019_UL2017-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
