@@ -11,7 +11,7 @@ optional arguments:
                         over (look at inputFiles) [Default: datasets.dat]
   -t TAG, --tag TAG     Tag the production; For better further navigation use
                         date, like Production_DD_MM_YY [Default:
-                        2019DataProduction]
+                        Production_01_01_2021]
   -s SITE_RUN, --site-run SITE_RUN
                         Site to run; Florida by default for us; [Default:
                         T2_US_Florida]
