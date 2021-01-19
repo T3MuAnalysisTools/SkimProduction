@@ -78,11 +78,11 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-f", "--input-file",help="input file; [Default: %(default)s] ", action="store", default = 'datasets.dat')
-    parser.add_argument("-t", "--tag",help="Tag the production; [Default: %(default)s] ",  type=str, action="store", default = '2019DataProduction')
-    parser.add_argument("-s", "--site-run",help="Site to run; [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
-    parser.add_argument("-o", "--path-to-store",help="Path to store the output files; [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
-    parser.add_argument("-j", "--json",help="LumiMask JSON file; [Default: %(default)s] ",  type=str, action="store", default = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt')
+    parser.add_argument("-f", "--input-file",help="input file; The datacard with samples you want to run over (look at inputFiles)  [Default: %(default)s] ", action="store", default = 'datasets.dat')
+    parser.add_argument("-t", "--tag",help="Tag the production; For better further navigation use date, like Production_DD_MM_YY [Default: %(default)s] ",  type=str, action="store", default = '2019DataProduction')
+    parser.add_argument("-s", "--site-run",help="Site to run; Florida by default for us;  [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
+    parser.add_argument("-o", "--path-to-store",help="Path to store the output files; The path files to be stored in UF T2 DCache, specify your! /store/user/<username> [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
+    parser.add_argument("-j", "--json",help="LumiMask JSON file; Look in the directory, there are two JSONS for 2017 and 2018 data, give a right one. [Default: %(default)s] ",  type=str, action="store", default = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt')
     parser.add_argument("-d", "--data-tier",help="Data tier of the input fies AOD/MINIAOD; Default is AOD, if otherwise use option MINIAOD; [Default: %(default)s]", type=str, action="store", default = 'AOD')
     args = parser.parse_args()
 
