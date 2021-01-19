@@ -17,7 +17,9 @@ optional arguments:
   -j JSON, --json JSON  LumiMask JSON file; [Default: Cert_294927-306462_13TeV
                         _PromptReco_Collisions17_JSON.txt]
   -d DATA_TIER, --data-tier DATA_TIER
-                        Data tier of the input fies; [Default: AOD]
+                        Data tier of the input fies AOD/MINIAOD; Default is
+                        AOD, if otherwise use option MINIAOD; [Default: AOD]
+
 
 ```
 Important: 

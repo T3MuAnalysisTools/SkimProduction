@@ -83,7 +83,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--site-run",help="Site to run; [Default: %(default)s] ",  type=str, action="store", default = 'T2_US_Florida')
     parser.add_argument("-o", "--path-to-store",help="Path to store the output files; [Default: %(default)s] ",  type=str, action="store", default = '/store/user/cherepan')
     parser.add_argument("-j", "--json",help="LumiMask JSON file; [Default: %(default)s] ",  type=str, action="store", default = 'Cert_294927-306462_13TeV_PromptReco_Collisions17_JSON.txt')
-    parser.add_argument("-d", "--data-tier",help="Data tier of the input fies; [Default: %(default)s]", type=str, action="store", default = 'AOD')
+    parser.add_argument("-d", "--data-tier",help="Data tier of the input fies AOD/MINIAOD; Default is AOD, if otherwise use option MINIAOD; [Default: %(default)s]", type=str, action="store", default = 'AOD')
     args = parser.parse_args()
 
     datasetsFile = args.input_file
