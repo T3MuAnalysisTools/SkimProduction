@@ -1,0 +1,52 @@
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018A-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018B-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018C-17Sep2018-v1/MINIAOD
+GT: 102X_dataRun2_v13
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018D-PromptReco-v2/MINIAOD
+GT: 102X_dataRun2_Prompt_v16
+Prod: global
+
+
+DataMCTypes: ds_phipi
+Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCP5_13TeV-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: global
+
+
+DataMCTypes: ds_tau
+Path: /DsToTau_TauMass1p87/wangjian-RunIIAutumn18MiniAOD-102X-c64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: ds_tau
+Path: /DsToTau_TauMass1p67/wangjian-RunIIAutumn18MiniAOD-102X-c64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: ds_tau
+Path: /DsToTau_TauTo3Mu_November2020/wangjian-RunIIAutumn18MiniAOD-102X-c64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: bp_tau
+Path: /BpToTau_TauTo3Mu_November2020/wangjian-RunIIAutumn18MiniAOD-102X-c64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
