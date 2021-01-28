@@ -1,0 +1,16 @@
+DataMCTypes: ds_tau
+Path: /DsToTau_TauTo3Mu_March2020/wangjian-RunIIAutumn18DRPremix-102X-2f1667a4ab974bdf4cb2916f291c3603/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod: phys03
+
+
+DataMCTypes: b0_tau
+Path: /B0ToTau_TauTo3Mu/wangjian-CRAB3_RunIIAutumn18DR_AODSIM-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod:  phys03
+
+
+DataMCTypes: bp_tau
+Path: /BuTau3Mu/bjoshi-CRAB3_MC2018_BuTau3Mu_13TeV_DIGI-87600497c2c6a5767aee5d92666e59c3/USER
+GT: 102X_upgrade2018_realistic_v21
+Prod:  phys03
