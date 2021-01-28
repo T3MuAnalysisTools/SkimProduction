@@ -1,0 +1,46 @@
+DataMCTypes: data
+Path: /DoubleMuonLowMass/Run2017B-09Aug2019_UL2017-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCTypes: data
+Path: /DoubleMuonLowMass/Run2017C-09Aug2019_UL2017-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCTypes: data
+Path: /DoubleMuonLowMass/Run2017D-09Aug2019_UL2017-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCTypes: data
+Path: /DoubleMuonLowMass/Run2017E-09Aug2019_UL2017-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCTypes: data
+Path: /DoubleMuonLowMass/Run2017F-09Aug2019_UL2017-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCTypes: b0_tau
+Path: /BdToTau_To3Mu_MuFilter_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+GT: 106X_mc2017_realistic_v8
+Prod: global
+
+
+DataMCTypes: bp_tau
+Path: /BuToTau_To3Mu_MuFilter_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+GT: 106X_mc2017_realistic_v8
+Prod: global
+
+
+DataMCTypes: ds_tau
+Path: /DsToTau_To3Mu_MuFilter_TuneCP5_13TeV-pythia8-evtgen/RunIISummer20UL17MiniAOD-106X_mc2017_realistic_v6-v1/MINIAODSIM
+GT: 106X_mc2017_realistic_v8
+Prod: global
