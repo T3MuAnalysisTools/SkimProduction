@@ -5,12 +5,12 @@ import sys
 import argparse
 
 def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag, Site, OutputPath, LumiMask, DataTier):
-    submitall=open("SubmitAllByCrab.sh","w")
-    reportall=open("ReportAllByCrab.sh","w")
-    statusall=open("CheckStatusAllByCrab.sh","w")
-    resubmitall=open("ResubmitAllByCrab.sh","w")
+    submitall=open("SubmitAllByCrab_"+prodtag+".sh","w")
+    reportall=open("ReportAllByCrab_"+prodtag+".sh","w")
+    statusall=open("CheckStatusAllByCrab_"+prodtag+".sh","w")
+    resubmitall=open("ResubmitAllByCrab_"+prodtag+".sh","w")
     for (datasets, jobtag, dmctype, prodintance, gt) in zip(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags):
-        runNtupleFileName = "runNtuple_"+str(dmctype)+".py"
+        runNtupleFileName = "runNtuple_"+str(dmctype)+"_"+DataTier+"_"+".py"
         template_file = ''
         if (DataTier == 'AOD'): template_file = 'runNtuple_template.py'
         elif (DataTier == 'MINIAOD'): template_file = 'runNtuple_template_miniaod.py'
@@ -31,8 +31,10 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
             else:
                 filedata = filedata.replace('<MC>', str(True))
                 filedata = filedata.replace('<MCFull>', str(False))
-                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates::PAT')
-                filedata = filedata.replace('<LostTrackTag>', 'lostTracks::PAT')
+#                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates::PAT')
+#                filedata = filedata.replace('<LostTrackTag>', 'lostTracks::PAT')
+                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates')
+                filedata = filedata.replace('<LostTrackTag>', 'lostTracks')
             with open(runNtupleFileName, 'w') as file:
                 file.write(filedata)
         outputdatatag = prodtag+"_"+jobtag

@@ -98,7 +98,20 @@ process.TFileService = cms.Service('TFileService',
                                    )
 
 
-process.source.fileNames = ['/store/data/Run2018D/DoubleMuonLowMass/MINIAOD/PromptReco-v2/000/325/159/00000/1403B072-371A-764C-9B25-A172D8B1A884.root'] #data
+#process.source.fileNames = ['/store/data/Run2018D/DoubleMuonLowMass/MINIAOD/PromptReco-v2/000/325/159/00000/1403B072-371A-764C-9B25-A172D8B1A884.root'] #data
+
+process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_980.root',   # ds to tau
+                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_981.root',
+                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_982.root']
+
+
+#process.source.fileNames = ['/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_70.root', # bp to tau
+#                            '/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_71.root']
+
+
+
+
+
 #process.source.fileNames = [''] #minbias
 #process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_144.root'] #ds_tau
 #process.source.fileNames = [''] #bd_tau
@@ -120,8 +133,9 @@ process.T3MTree.triggerSummary = cms.InputTag('none')
 process.T3MTree.trks = cms.InputTag('TrackCollection:pfTracks:DsTauNtuple')
 process.T3MTree.pvs = cms.InputTag("offlineSlimmedPrimaryVertices")
 process.T3MTree.triggerObjects = cms.InputTag('unpackedPatTrigger')
-process.T3MTree.genParticles = cms.InputTag('prunedGenParticles::PAT')
+process.T3MTree.genParticles = cms.InputTag('prunedGenParticles')
 process.T3MTree.pileupSummary = cms.InputTag('slimmedAddPileupInfo')
+
 
 process.TrackCollection.PFCandidateTag = cms.InputTag('<PFCandidateTag>')
 process.TrackCollection.LostTrackTag = cms.InputTag('<LostTrackTag>')
