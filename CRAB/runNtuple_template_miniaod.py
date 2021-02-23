@@ -109,6 +109,37 @@ process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/
 #                            '/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_71.root']
 
 
+#process.source.fileNames = ['/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_501.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_502.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_503.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_504.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_505.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_506.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_507.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_508.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_509.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_510.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_511.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_512.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_513.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_514.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_515.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_516.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_517.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_518.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_519.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_520.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_521.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_522.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_523.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_524.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_525.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_526.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_527.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_528.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_529.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_530.root',
+#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_531.root']
 
 
 
