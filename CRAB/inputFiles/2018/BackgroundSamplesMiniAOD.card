@@ -43,7 +43,7 @@ Prod: phys03
 
 ### this is bb/cc -> 3mu (with 3mu mass btw 1.6 - 2.2 GeV)
 DataMCTypes: bbcc3mu   
-Path: /minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020/cherepan-minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+Path: /minbias_PythiaBBarCCbarThreeMuMass_GEN_PythiaBBarCCbarThreeMuMas_Feb2021/cherepan-minbias_PythiaBBarCCbarThreeMuMass_GEN_PythiaBBarCCbarThreeMuMas_Feb2021_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
