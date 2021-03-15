@@ -1,0 +1,51 @@
+
+DataMCTypes: ds_muetamumugamma
+Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER 
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: ds_muetamumugamma
+Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_26_03_2020/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_26_03_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+DataMCTypes: ds_muomegamumupi0
+Path: /DMuNuOmega_MuMuPi0_GEN_26_03_2020/cherepan-DMuNuOmega_MuMuPi0_GEN_26_03_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+DataMCTypes: ds_muphimumugamma
+Path: /DMuNuPhi_MuMuGamma_GEN_26_03_2020/cherepan-DMuNuPhi_MuMuGamma_GEN_26_03_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: ds_muetaprimemumugamma
+Path: /DMuNuEtaPrime_MuMuGamma_GEN_Generation_27_04_20/cherepan-DMuNuEtaPrime_MuMuGamma_GEN_Generation_27_04_20_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: minbias   ### this is bb/cc -> 2mu
+Path: /minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020/cherepan-minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: minbias   ### this is bb/cc -> 3mu (with 3mu mass btw 1.6 - 2.2 GeV)
+Path: /minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020/cherepan-minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
