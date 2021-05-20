@@ -1,4 +1,3 @@
-
 DataMCTypes: ds_muetamumugamma
 Path: /DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June/cherepan-DMuNuEtaMuMuGamma_EvtGen_GEN_ValdimirGenerationRoundII_28June_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER 
 GT: 102X_upgrade2018_realistic_v20
@@ -34,6 +33,21 @@ GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
+
+
+DataMCTypes: ds_muetaprimemumugamma
+Path: /DMuNuEtaPrime_MuMuGamma_GEN_Feb21/cherepan-DMuNuEtaPrime_MuMuGamma_GEN_Feb21_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: ds_muetamumu
+Path: /DMuNuEta_MuMu_GEN_Mar21/cherepan-DMuNuEta_MuMu_GEN_Mar21_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
 ### this is bb/cc -> 2mu
 DataMCTypes: bbcc2mu   
 Path: /minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020/cherepan-minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
@@ -46,6 +60,7 @@ DataMCTypes: bbcc3mu
 Path: /minbias_PythiaBBarCCbarThreeMuMass_GEN_PythiaBBarCCbarThreeMuMas_Feb2021/cherepan-minbias_PythiaBBarCCbarThreeMuMass_GEN_PythiaBBarCCbarThreeMuMas_Feb2021_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
+
 
 
 
