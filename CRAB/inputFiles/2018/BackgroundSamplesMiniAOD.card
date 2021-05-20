@@ -48,6 +48,20 @@ GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
 
+DataMCTypes: ds_phipi
+Path: /DsToPhiPi_ToMuMu_MuFilter_TuneCP5_13TeV-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v21
+Prod: global
+
+
+DataMCTypes: ds_muphimumu
+Path: /DsToEtaMuNu/wangjian-RunIIAutumn18MiniAOD-102Xc64c34953e011388ee7948c74fdb7fa0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
 ### this is bb/cc -> 2mu
 DataMCTypes: bbcc2mu   
 Path: /minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020/cherepan-minbias_PythiaBBarCCbarTwoMuMass_GEN_02_04_2020_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
