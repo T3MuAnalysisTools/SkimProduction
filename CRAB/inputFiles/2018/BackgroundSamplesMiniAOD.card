@@ -61,6 +61,14 @@ Prod: phys03
 
 
 
+DataMCTypes: ds_murhomumu
+Path: /DMuNuRho_MuMu_GEN_May22Gen/cherepan-DMuNuRho_MuMu_GEN_May22Gen_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
 
 ### this is bb/cc -> 2mu
 DataMCTypes: bbcc2mu   
