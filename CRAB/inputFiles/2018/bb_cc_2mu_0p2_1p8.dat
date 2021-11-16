@@ -1,0 +1,24 @@
+DataMCTypes: bbcc2mu
+Path:  /PythiaBBarCCbarTwoMuMass_GEN_0p2_1p8_20000ReDecays/cherepan-PythiaBBarCCbarTwoMuMass_GEN_0p2_1p8_20000ReDecaysRIII_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: bbcc2mu
+Path: /PythiaBBarCCbarTwoMuMass_GEN_0p2_1p8_20000ReDecays/cherepan-PythiaBBarCCbarTwoMuMass_GEN_0p2_1p8_20000ReDecaysRII_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+DataMCTypes: bbcc2mu
+Path: /Pythia8_bbar_GEN_VladimirBBCC_2mu_50KReDec/cherepan-Pythia8_bbar_GEN_VladimirBBCC_2mu_50KReDecmAOD_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+

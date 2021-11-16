@@ -1,0 +1,11 @@
+DataMCTypes: ds_muetamumugamma
+Path: /DsMuNuEtaMuMuGamma_EvtGen_GEN_ThreeMuM_1p6_2p2_500Redecays_RoundI/cherepan-DsMuNuEtaMuMuGamma_EvtGen_GEN_ThreeMuM_1p6_2p2_500Redecays_RoundI_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+DataMCTypes: ds_muetamumugamma
+Path: /DsMuNuEtaMuMuGamma_EvtGen_GEN_28_10ReDec500/cherepan-DsMuNuEtaMuMuGamma_EvtGen_GEN_28_10ReDec500_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
