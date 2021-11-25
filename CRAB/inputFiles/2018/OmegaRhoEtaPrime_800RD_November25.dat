@@ -1,0 +1,27 @@
+DataMCTypes: ds_murhomumu
+Path: /DMuNuRho_MuMu_EvtGen_GEN_Nov17_800RD/cherepan-DMuNuRho_MuMu_EvtGen_GEN_Nov17_800RDmAOD_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+
+DataMCTypes: ds_muetaprimemumugamma
+Path: /DsMuNuEtaPrime_MuMuGamma_EvtGen_GEN_Nov17_800RD/cherepan-DsMuNuEtaPrime_MuMuGamma_EvtGen_GEN_Nov17_800RDmAOD_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: d_muomegamumu_mumupi0
+Path: /DMuNuOmega_MuMu_MuMuPi0_GEN_Nov17_RD800/cherepan-DMuNuOmega_MuMu_MuMuPi0_GEN_Nov17_RD800mAOD_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: ds_muphimumu_mumugamma
+Path: /DsMuNuPhi_MuMu_MuMuGamma_GEN_Nov17_RD800/cherepan-DsMuNuPhi_MuMu_MuMuGamma_GEN_Nov17_RD800mAOD_MiniAOD-541b32720d6bfce0666f96e81d53dbe0/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
