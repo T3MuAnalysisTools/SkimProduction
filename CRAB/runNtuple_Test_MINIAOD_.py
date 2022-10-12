@@ -58,17 +58,6 @@ else :
 
 process = cms.Process("DsTauNtuple")
 
-process.bareTaus = cms.EDFilter("PATTauRefSelector",
-   src = cms.InputTag("slimmedTaus"),
-   cut = cms.string("tauID('byCombinedIsolationDeltaBetaCorrRaw3Hits') < 1000.0 && pt>18") #miniAOD tau from hpsPFTauProducer have pt>18 and decaymodefinding ID
-   )
-   
-process.goodPrimaryVertices = cms.EDFilter("VertexSelector",
-  src = cms.InputTag("offlineSlimmedPrimaryVertices"),
-  cut = cms.string("!isFake && ndof > 4 && abs(z) <= 24 && position.Rho <= 2"), #cut on good primary vertexes
-  filter = cms.bool(False), # if True, rejects events . if False, produce emtpy vtx collection
-)
-
 process.load("FWCore.MessageService.MessageLogger_cfi")
 process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
 
@@ -88,107 +77,18 @@ process.cloneGlobalMuonTagger.taggingMode = cms.bool(True)
 
 #Begin Tau Tagging (for MiniAOD)
 
-from RecoTauTag.RecoTau.TauDiscriminatorTools import noPrediscriminants
-process.load('RecoTauTag.Configuration.loadRecoTauTagMVAsFromPrepDB_cfi')
-from RecoTauTag.RecoTau.PATTauDiscriminationByMVAIsolationRun2_cff import *
-
-process.rerunDiscriminationByIsolationMVArun2v1raw = patDiscriminationByIsolationMVArun2v1raw.clone(
-   PATTauProducer = cms.InputTag('slimmedTaus'),
-   Prediscriminants = noPrediscriminants,
-   loadMVAfromDB = cms.bool(True),
-   mvaName = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1"), # name of the training you want to use
-   mvaOpt = cms.string("DBoldDMwLT"), # option you want to use for your training (i.e., which variables are used to compute the BDT score)
-   verbosity = cms.int32(0)
+#process.bareTaus = cms.EDFilter("PATTauRefSelector",
+#   NewTaus = cms.InputTag("slimmedTaus"),
+   #cut = cms.string("tauID('byCombinedIsolationDeltaBetaCorrRaw3Hits') < 1000.0 && pt>18") miniAOD tau from hpsPFTauProducer have pt>18 and decaymodefinding ID
+#)
+   
+process.goodPrimaryVertices = cms.EDFilter("VertexSelector",
+  src = cms.InputTag("offlineSlimmedPrimaryVertices"),
+  cut = cms.string("!isFake && ndof > 4 && abs(z) <= 24 && position.Rho <= 2"), #cut on good primary vertexes
+  filter = cms.bool(False), # if True, rejects events . if False, produce emtpy vtx collection
 )
-
-process.rerunDiscriminationByIsolationMVArun2v1VLoose = patDiscriminationByIsolationMVArun2v1VLoose.clone(
-   PATTauProducer = cms.InputTag('slimmedTaus'),    
-   Prediscriminants = noPrediscriminants,
-   toMultiplex = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1raw'),
-   key = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1raw:category'),
-   loadMVAfromDB = cms.bool(True),
-   mvaOutput_normalization = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_mvaOutput_normalization"), # normalization fo the training you want to use
-   mapping = cms.VPSet(
-      cms.PSet(
-         category = cms.uint32(0),
-         cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff90"), # this is the name of the working point you want to use
-         variable = cms.string("pt"),
-      )
-   )
-)
-
-# here we produce all the other working points for the training
-process.rerunDiscriminationByIsolationMVArun2v1Loose = process.rerunDiscriminationByIsolationMVArun2v1VLoose.clone()
-process.rerunDiscriminationByIsolationMVArun2v1Loose.mapping[0].cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff80")
-process.rerunDiscriminationByIsolationMVArun2v1Medium = process.rerunDiscriminationByIsolationMVArun2v1VLoose.clone()
-process.rerunDiscriminationByIsolationMVArun2v1Medium.mapping[0].cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff70")
-process.rerunDiscriminationByIsolationMVArun2v1Tight = process.rerunDiscriminationByIsolationMVArun2v1VLoose.clone()
-process.rerunDiscriminationByIsolationMVArun2v1Tight.mapping[0].cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff60")
-process.rerunDiscriminationByIsolationMVArun2v1VTight = process.rerunDiscriminationByIsolationMVArun2v1VLoose.clone()
-process.rerunDiscriminationByIsolationMVArun2v1VTight.mapping[0].cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff50")
-process.rerunDiscriminationByIsolationMVArun2v1VVTight = process.rerunDiscriminationByIsolationMVArun2v1VLoose.clone()
-process.rerunDiscriminationByIsolationMVArun2v1VVTight.mapping[0].cut = cms.string("RecoTauTag_tauIdMVAIsoDBoldDMwLT2016v1_WPEff40")
-
-# this sequence has to be included in your cms.Path() before your analyzer which accesses the new variables is called.
-process.rerunMvaIsolation2SeqRun2 = cms.Sequence(
-   process.rerunDiscriminationByIsolationMVArun2v1raw
-   *process.rerunDiscriminationByIsolationMVArun2v1VLoose
-   *process.rerunDiscriminationByIsolationMVArun2v1Loose
-   *process.rerunDiscriminationByIsolationMVArun2v1Medium
-   *process.rerunDiscriminationByIsolationMVArun2v1Tight
-   *process.rerunDiscriminationByIsolationMVArun2v1VTight
-   *process.rerunDiscriminationByIsolationMVArun2v1VVTight
-)
-
-# embed new id's into new tau collection
-embedID = cms.EDProducer("PATTauIDEmbedder",
-   src = cms.InputTag('slimmedTaus'),
-   tauIDSources = cms.PSet(
-      byIsolationMVArun2v1DBoldDMwLTrawNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1raw'),
-      byVLooseIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1VLoose'),
-      byLooseIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1Loose'),
-      byMediumIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1Medium'),
-      byTightIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1Tight'),
-      byVTightIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1VTight'),
-      byVVTightIsolationMVArun2v1DBoldDMwLTNew = cms.InputTag('rerunDiscriminationByIsolationMVArun2v1VVTight'),
-      )
-   )
-setattr(process, "NewTauIDsEmbedded", embedID)
 
 #End Tau Tagging
-
-import RecoVertex.PrimaryVertexProducer.OfflinePrimaryVertices_cfi
-process.offlinePrimaryVertices = RecoVertex.PrimaryVertexProducer.OfflinePrimaryVertices_cfi.offlinePrimaryVertices.clone()
-
-from RecoTauTag.RecoTau.RecoTauCombinatoricProducer_cfi import combinatoricRecoTaus
-process.combinatoricRecoTaus = combinatoricRecoTaus.clone()
-
-from RecoTauTag.RecoTau.RecoTauCleaner_cfi import RecoTauCleaner
-process.hpsPFTauProducerSansRefs = RecoTauCleaner.clone(
-    src = cms.InputTag("combinatoricRecoTaus")
-)
-process.hpsPFTauProducerSansRefs.cleaners[1].src = cms.InputTag("hpsSelectionDiscriminator")
-
-from RecoTauTag.RecoTau.RecoTauPiZeroUnembedder_cfi import RecoTauPiZeroUnembedder
-process.hpsPFTauProducer = RecoTauPiZeroUnembedder.clone(
-    src = cms.InputTag("hpsPFTauProducerSansRefs")
-)
-
-## Selection of taus that pass the HPS selections: pt > 15, mass cuts, tauCone cut
-from RecoTauTag.RecoTau.PFRecoTauDiscriminationByHPSSelection_cfi import hpsSelectionDiscriminator, decayMode_1Prong0Pi0, decayMode_1Prong1Pi0, decayMode_1Prong2Pi0, decayMode_2Prong0Pi0, decayMode_2Prong1Pi0, decayMode_3Prong0Pi0, decayMode_3Prong1Pi0
-
-process.hpsPFTauDiscriminationByDecayModeFindingNewDMs = hpsSelectionDiscriminator.clone(
-    PFTauProducer = cms.InputTag('hpsPFTauProducer'),
-    decayModes = cms.VPSet(
-        decayMode_1Prong0Pi0,
-        decayMode_1Prong1Pi0,
-        decayMode_1Prong2Pi0,
-        decayMode_2Prong0Pi0,
-        decayMode_2Prong1Pi0,
-        decayMode_3Prong0Pi0,
-        decayMode_3Prong1Pi0,
-    )
-)
 
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1000) )
 
@@ -288,5 +188,5 @@ process.TrackCollection.LostTrackTag = cms.InputTag('lostTracks')
 #process.tagger = cms.Path(process.badGlobalMuonTagger)
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
 #process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger *process.rerunMvaIsolation2SeqRun2 * process.NewTauIDsEmbedded * process.offlinePrimaryVertices * process.combinatoricRecoTaus * process.hpsPFTauProducerSansRefs * process.hpsPFTauProducer * process.hpsPFTauDiscriminationByDecayModeFindingNewDMs *  process.DsTauNtuple)
-process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger *process.rerunMvaIsolation2SeqRun2 * process.NewTauIDsEmbedded * process.DsTauNtuple)
+process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.bareTaus * process.DsTauNtuple)
 process.schedule = cms.Schedule(process.p)
