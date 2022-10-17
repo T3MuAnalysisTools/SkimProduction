@@ -12,7 +12,7 @@ options.register('globalTag',
                  "Global Tag")
 
 options.register('nEvents',
-                 500, #default value
+                 -1, #default value
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.int,
                  "Maximum number of processed events")
@@ -217,7 +217,14 @@ process.TFileService = cms.Service('TFileService',
 #                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_981.root',
 #                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_982.root']
 
-process.source.fileNames = ['file:/afs/cern.ch/work/m/mmadhu/4B536A0D-9E6B-2249-906C-0501C109F09D.root'] #Z to Tau miniaod sample
+#process.source.fileNames = ['file:/afs/cern.ch/work/m/mmadhu/4B536A0D-9E6B-2249-906C-0501C109F09D.root'] #Z to Tau miniaod sample
+
+#process.source.fileNames = ['/store/mc/RunIIAutumn18MiniAOD/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/00000/0038605E-C94B-574F-AF1F-000435E9A26E.root']
+
+#process.source.fileNames = ['file:0038605E-C94B-574F-AF1F-000435E9A26E.root']
+
+process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
+
 
 #process.source.fileNames = ['/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_70.root', # bp to tau
 #                            '/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_71.root']
@@ -267,9 +274,10 @@ process.source.fileNames = ['file:/afs/cern.ch/work/m/mmadhu/4B536A0D-9E6B-2249-
 from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
 setupTauNtuple(process)
 process.T3MTree.miniAODRun = cms.bool(True)
-process.T3MTree.DataMCType = cms.untracked.string('bp_tau')
+process.T3MTree.DataMCType = cms.untracked.string('z2tautau_tau3mu')
 process.T3MTree.doMC = cms.bool(True)
 process.T3MTree.doFullMC = cms.bool(False)
+process.T3MTree.doTaus = cms.bool(True)
 process.T3MTree.btagsCvsB = cms.InputTag('none')
 process.T3MTree.btagsMVA = cms.InputTag('none')
 process.T3MTree.btagsCSV = cms.InputTag('none')
@@ -286,7 +294,23 @@ process.TrackCollection.PFCandidateTag = cms.InputTag('packedPFCandidates')
 process.TrackCollection.LostTrackTag = cms.InputTag('lostTracks')
 
 #process.tagger = cms.Path(process.badGlobalMuonTagger)
+
+
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
+
+
+updatedTauName = "slimmedTausPlusDeepTau" #name of pat::Tau collection with new tau-Ids
+import RecoTauTag.RecoTau.tools.runTauIdMVA as tauIdConfig
+tauIdEmbedder = tauIdConfig.TauIDEmbedder(process, cms, debug = False,
+                    updatedTauName = updatedTauName,
+                    toKeep = ["deepTau2017v2p1", #deepTau TauIDs
+                               ])
+tauIdEmbedder.runTauID()
+# Path and EndPath definitions
+
+
 #process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger *process.rerunMvaIsolation2SeqRun2 * process.NewTauIDsEmbedded * process.offlinePrimaryVertices * process.combinatoricRecoTaus * process.hpsPFTauProducerSansRefs * process.hpsPFTauProducer * process.hpsPFTauDiscriminationByDecayModeFindingNewDMs *  process.DsTauNtuple)
-process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger *process.rerunMvaIsolation2SeqRun2 * process.NewTauIDsEmbedded * process.DsTauNtuple)
+#process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger *process.rerunMvaIsolation2SeqRun2 * process.NewTauIDsEmbedded * process.rerunMvaIsolationSequence *  getattr(process,updatedTauName) *  process.DsTauNtuple)
+
+process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.rerunMvaIsolationSequence *  getattr(process,updatedTauName) *  process.DsTauNtuple)
 process.schedule = cms.Schedule(process.p)
