@@ -26,6 +26,7 @@ T3MTree = cms.EDAnalyzer('T3MNtuple',
                          DataMCType    = cms.untracked.string('data'), #Defaut: data. Have a look at src/DataMCType.cc for available types   Set in other instance, here only for local tests
                          reco_muons = cms.InputTag('muons'),
                          pat_muons = cms.InputTag('slimmedMuons'),
+                         met_puppi = cms.InputTag('slimmedMETsPuppi'),
                          pvs = cms.InputTag('offlinePrimaryVertices'),
                          reco_svs = cms.InputTag('inclusiveSecondaryVertices'),
                          composite_svs = cms.InputTag('slimmedSecondaryVertices'),
