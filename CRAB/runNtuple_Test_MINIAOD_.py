@@ -65,7 +65,8 @@ process.bareTaus = cms.EDFilter("PATTauRefSelector",
    
 process.goodPrimaryVertices = cms.EDFilter("VertexSelector",
   src = cms.InputTag("offlineSlimmedPrimaryVertices"),
-  cut = cms.string("!isFake && ndof > 4 && abs(z) <= 24 && position.Rho <= 2"), #cut on good primary vertexes
+ # cut = cms.string("!isFake && ndof > 4 && abs(z) <= 24 && position.Rho <= 2"), #cut on good primary vertexes
+  cut = cms.string(" "), #cut on good primary vertexes
   filter = cms.bool(False), # if True, rejects events . if False, produce emtpy vtx collection
 )
 
@@ -224,6 +225,7 @@ process.TFileService = cms.Service('TFileService',
 #process.source.fileNames = ['file:0038605E-C94B-574F-AF1F-000435E9A26E.root']
 
 process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
+#                            '/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_2.root']
 
 
 #process.source.fileNames = ['/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_70.root', # bp to tau
@@ -278,6 +280,7 @@ process.T3MTree.DataMCType = cms.untracked.string('z2tautau_tau3mu')
 process.T3MTree.doMC = cms.bool(True)
 process.T3MTree.doFullMC = cms.bool(False)
 process.T3MTree.doTaus = cms.bool(True)
+process.T3MTree.doElectrons = cms.bool(True)
 process.T3MTree.btagsCvsB = cms.InputTag('none')
 process.T3MTree.btagsMVA = cms.InputTag('none')
 process.T3MTree.btagsCSV = cms.InputTag('none')
