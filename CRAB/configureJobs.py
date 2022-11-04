@@ -30,7 +30,7 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
                 filedata = filedata.replace('<MCFull>', str(True))
             else:
                 filedata = filedata.replace('<MC>', str(True))
-                filedata = filedata.replace('<MCFull>', str(False))
+                filedata = filedata.replace('<MCFull>', str(True))
 #                filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates::PAT')
 #                filedata = filedata.replace('<LostTrackTag>', 'lostTracks::PAT')
                 filedata = filedata.replace('<PFCandidateTag>', 'packedPFCandidates')

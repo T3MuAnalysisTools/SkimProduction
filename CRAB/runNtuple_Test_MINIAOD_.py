@@ -6,13 +6,14 @@ import sys
 
 options = VarParsing.VarParsing()
 options.register('globalTag',
-                 '102X_upgrade2018_realistic_v21', #default value
+                 '106X_dataRun2_v32',
+#                 '102X_upgrade2018_realistic_v21', #default value
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Global Tag")
 
 options.register('nEvents',
-                 -1, #default value
+                 1000, #default value
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.int,
                  "Maximum number of processed events")
@@ -224,7 +225,9 @@ process.TFileService = cms.Service('TFileService',
 
 #process.source.fileNames = ['file:0038605E-C94B-574F-AF1F-000435E9A26E.root']
 
-process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
+process.source.fileNames = ['/store/data/Run2018A/DoubleMuonLowMass/MINIAOD/12Nov2019_UL2018-v1/00000/000B6AE3-8124-744E-B401-B195488FCA51.root']
+
+#process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
 #                            '/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_2.root']
 
 
@@ -277,7 +280,7 @@ from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
 setupTauNtuple(process)
 process.T3MTree.miniAODRun = cms.bool(True)
 process.T3MTree.DataMCType = cms.untracked.string('z2tautau_tau3mu')
-process.T3MTree.doMC = cms.bool(True)
+process.T3MTree.doMC = cms.bool(False)
 process.T3MTree.doFullMC = cms.bool(False)
 process.T3MTree.doTaus = cms.bool(True)
 process.T3MTree.doElectrons = cms.bool(True)

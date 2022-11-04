@@ -98,56 +98,11 @@ process.TFileService = cms.Service('TFileService',
                                    )
 
 
-#process.source.fileNames = ['/store/data/Run2018D/DoubleMuonLowMass/MINIAOD/PromptReco-v2/000/325/159/00000/1403B072-371A-764C-9B25-A172D8B1A884.root'] #data
 
-process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_980.root',   # ds to tau
-                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_981.root',
-                            '/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_982.root']
+process.source.fileNames = ['/store/data/Run2018A/DoubleMuonLowMass/MINIAOD/12Nov2019_UL2018-v1/00000/000B6AE3-8124-744E-B401-B195488FCA51.root']
+#process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_980.root']   # ds to tau
 
-
-#process.source.fileNames = ['/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_70.root', # bp to tau
-#                            '/cmsuf/data/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_71.root']
-
-
-#process.source.fileNames = ['/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_501.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_502.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_503.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_504.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_505.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_506.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_507.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_508.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_509.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_510.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_511.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_512.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_513.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_514.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_515.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_516.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_517.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_518.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_519.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_520.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_521.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_522.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_523.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_524.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_525.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_526.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_527.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_528.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_529.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_530.root',
-#                            '/store/user/wangjian/B0ToTau_TauTo3Mu/RunIIAutumn18MiniAOD-102X/200324_184847/0000/BPH-RunIIAutumn18MiniAOD-00276_531.root']
-
-
-
-#process.source.fileNames = [''] #minbias
-#process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_144.root'] #ds_tau
-#process.source.fileNames = [''] #bd_tau
-#process.source.fileNames = ['/store/user/wangjian/BpToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201112_084651/0000/BPH-RunIIAutumn18MiniAOD-00158_339.root'] #bu_tau
-#process.source.fileNames = ['/store/mc/RunIIFall17MiniAODv2/DsToPhiPi_ToMuMu_MuFilter_TuneCUEP8M1_13TeV-pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v2/50000/76D80325-41C0-E911-9905-AC1F6BAC7C0A.root'] #ds_phipi
+#process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
 
 ####################### TauNtuple (MINIAOD version) ######################
 from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
@@ -156,11 +111,14 @@ process.T3MTree.miniAODRun = cms.bool(True)
 process.T3MTree.DataMCType = cms.untracked.string('<DMCType>')
 process.T3MTree.doMC = cms.bool(<MC>)
 process.T3MTree.doFullMC = cms.bool(<MCFull>)
+process.T3MTree.doTaus = cms.bool(True)
+process.T3MTree.doElectrons = cms.bool(True)
 process.T3MTree.btagsCvsB = cms.InputTag('none')
 process.T3MTree.btagsMVA = cms.InputTag('none')
 process.T3MTree.btagsCSV = cms.InputTag('none')
 process.T3MTree.btagDeepCSV = cms.InputTag('none')  # absent in AOD/MINIAOD
 process.T3MTree.triggerSummary = cms.InputTag('none')
+
 process.T3MTree.trks = cms.InputTag('TrackCollection:pfTracks:DsTauNtuple')
 process.T3MTree.pvs = cms.InputTag("offlineSlimmedPrimaryVertices")
 process.T3MTree.triggerObjects = cms.InputTag('unpackedPatTrigger')
@@ -173,5 +131,14 @@ process.TrackCollection.LostTrackTag = cms.InputTag('<LostTrackTag>')
 
 #process.tagger = cms.Path(process.badGlobalMuonTagger)
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
-process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.DsTauNtuple)
+updatedTauName = "slimmedTausPlusDeepTau" #name of pat::Tau collection with new tau-Ids
+import RecoTauTag.RecoTau.tools.runTauIdMVA as tauIdConfig
+tauIdEmbedder = tauIdConfig.TauIDEmbedder(process, cms, debug = False,
+                    updatedTauName = updatedTauName,
+                    toKeep = ["deepTau2017v2p1", #deepTau TauIDs
+                               ])
+tauIdEmbedder.runTauID()
+process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.rerunMvaIsolationSequence *  getattr(process,updatedTauName) *  process.DsTauNtuple)
+
+#process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.DsTauNtuple)
 process.schedule = cms.Schedule(process.p)
