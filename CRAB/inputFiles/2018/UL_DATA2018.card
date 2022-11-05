@@ -4,12 +4,12 @@ GT: 106X_dataRun2_v32
 Prod: global
 
 DataMCType: data
-Path: /DoubleMuonLowMass/Run2018B-12Nov2019_UL2018-v1/MINIAOD
+Path: /DoubleMuonLowMass/Run2018B-12Nov2019_UL2018-v2/MINIAOD
 GT: 106X_dataRun2_v32
 Prod: global
 
 DataMCType: data
-Path: /DoubleMuonLowMass/Run2018C-12Nov2019_UL2018-v1/MINIAOD
+Path: /DoubleMuonLowMass/Run2018C-12Nov2019_UL2018-v2/MINIAOD
 GT: 106X_dataRun2_v32
 Prod: global
 
