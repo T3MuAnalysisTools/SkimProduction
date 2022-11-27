@@ -137,6 +137,8 @@ tauIdEmbedder = tauIdConfig.TauIDEmbedder(process, cms, debug = False,
                     updatedTauName = updatedTauName,
                     toKeep = ["deepTau2017v2p1", #deepTau TauIDs
                                ])
+
+
 tauIdEmbedder.runTauID()
 process.p = cms.Path(process.TrackCollection * process.unpackedPatTrigger * process.rerunMvaIsolationSequence *  getattr(process,updatedTauName) *  process.DsTauNtuple)
 
