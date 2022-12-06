@@ -118,7 +118,7 @@ if __name__ == "__main__":
                 if len(JT) > 100:
 #                    JobTags.append( JT[:99])
                     mid= len(JT) // 2
-                    JobTags.append( JT[:mid-15] + JT[mid:])
+                    JobTags.append( JT[:mid-22] + JT[mid:])
                 else:
                     JobTags.append( JT)
 
