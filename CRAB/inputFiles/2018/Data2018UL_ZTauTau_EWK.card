@@ -1,0 +1,79 @@
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018A-12Nov2019_UL2018-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018B-12Nov2019_UL2018-v2/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018C-12Nov2019_UL2018-v2/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018D-12Nov2019_UL2018-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+DataMCTypes: z2tautau_tau3mu
+Path: /z2tautau_3mu_GEN_KinFit/cherepan-z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD-67ce8b0ca64e37d062b0c6e434a9919c/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+DataMCTypes: zgll
+Path: /ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext1-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: zgll
+Path: /ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext2-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+
+DataMCTypes: zz4l
+Path: /ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext2-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: zz4l
+Path: /ZZTo4L_TuneCP5_13TeV_powheg_pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext1-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: wgl
+Path: /WGToLNuG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v1/MINIAODSIM
+GT: 106X_upgrade2018_realistic_v11_L1v1
+Prod: global
+
+
+
+DataMCTypes: wz3l
+Path: /WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: wz3l
+Path: /WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext1-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: wz3l
+Path: /WZTo3LNu_1Jets_MLL-4to50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
+
+
+DataMCTypes: wz3l
+Path: /WZTo3LNu_1Jets_MLL-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v2/MINIAODSIM
+GT: 102X_upgrade2018_realistic_v15
+Prod: global
