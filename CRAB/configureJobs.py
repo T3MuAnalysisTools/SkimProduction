@@ -114,9 +114,11 @@ if __name__ == "__main__":
                 GT = line.split(":")
             if "Path" in line:
                 DataSets.append(line.split(":")[1].strip())
-                JT=(line.split(":")[1]).split("/")[1].strip()+"__"+(line.split(":")[1]).split("/")[2].strip()
+                JT=(line.split(":")[1]).split("/")[1].strip()+"_"+(line.split(":")[1]).split("/")[2].strip()
                 if len(JT) > 100:
-                    JobTags.append( JT[:99])
+#                    JobTags.append( JT[:99])
+                    mid= len(JT) // 2
+                    JobTags.append( JT[:mid-15] + JT[mid:])
                 else:
                     JobTags.append( JT)
 
@@ -129,6 +131,8 @@ if __name__ == "__main__":
             if "GT" in line:
                 GlobalTags.append(line.split(":")[1].strip())
     sizelist=[len(DataSets),len(JobTags), len(DataMCTypes), len(ProdInstance), len(GlobalTags)]
+    print 'DataSets', DataSets
+    print 'DataMCTypes', DataMCTypes
     if not all(number == sizelist[0] for number in sizelist):
         print "Something is not right with your config file; Please check again your ",datasetsFile
         sys.exit()
