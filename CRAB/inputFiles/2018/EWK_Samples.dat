@@ -54,3 +54,13 @@ Path: /WZTo3LNu_1Jets_MLL-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIIAutumn18Mini
 GT: 102X_upgrade2018_realistic_v15
 Prod: global
 
+DataMCTypes: zz4l_1toinf
+Path: /ZZTo4L_M-1toInf_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM
+GT: 106X_upgrade2018_realistic_v16_L1v1
+Prod: global
+
+DataMCTypes: wz3l_min0p1
+Path: /WZTo3LNu_mllmin0p1_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM
+GT: 106X_upgrade2018_realistic_v16_L1v1
+Prod: global
+
