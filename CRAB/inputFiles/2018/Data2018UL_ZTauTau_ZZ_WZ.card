@@ -1,0 +1,43 @@
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018A-12Nov2019_UL2018-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018B-12Nov2019_UL2018-v2/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018C-12Nov2019_UL2018-v2/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+DataMCType: data
+Path: /DoubleMuonLowMass/Run2018D-12Nov2019_UL2018-v1/MINIAOD
+GT: 106X_dataRun2_v32
+Prod: global
+
+
+
+DataMCTypes: z2tautau_tau3mu
+Path: /z2tautau_3mu_GEN_KinFit/cherepan-z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD-67ce8b0ca64e37d062b0c6e434a9919c/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
+DataMCTypes: zz4l_1toinf
+Path: /ZZTo4L_M-1toInf_TuneCP5_13TeV_powheg_pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM
+GT: 106X_upgrade2018_realistic_v16_L1v1
+Prod: global
+
+
+
+DataMCTypes: wz3l_min0p1
+Path: /WZTo3LNu_mllmin0p1_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM
+GT: 106X_upgrade2018_realistic_v16_L1v1
+Prod: global
