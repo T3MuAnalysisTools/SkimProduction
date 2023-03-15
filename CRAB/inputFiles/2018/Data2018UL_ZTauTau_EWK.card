@@ -24,6 +24,14 @@ Path: /z2tautau_3mu_GEN_KinFit/cherepan-z2tautau_3mu_GEN_KinFit14_03_2020_MiniAO
 GT: 102X_upgrade2018_realistic_v20
 Prod: phys03
 
+
+DataMCTypes: z2tautau_tau3mu
+Path: /z2tautau_3mu_GEN_KinFit/cherepan-z2tautau_3mu_14_03_2022_MiniAOD_v2-67ce8b0ca64e37d062b0c6e434a9919c/USER
+GT: 102X_upgrade2018_realistic_v20
+Prod: phys03
+
+
+
 DataMCTypes: zgll
 Path: /ZGammaToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15_ext1-v2/MINIAODSIM
 GT: 102X_upgrade2018_realistic_v15
