@@ -99,10 +99,11 @@ process.TFileService = cms.Service('TFileService',
 
 
 
-process.source.fileNames = ['/store/data/Run2018A/DoubleMuonLowMass/MINIAOD/12Nov2019_UL2018-v1/00000/000B6AE3-8124-744E-B401-B195488FCA51.root']
-#process.source.fileNames = ['/store/user/wangjian/DsToTau_TauTo3Mu_November2020/RunIIAutumn18MiniAOD-102X/201107_171229/0000/BPH-RunIIAutumn18MiniAOD-00158_980.root']   # ds to tau
+process.source.fileNames = ['/store/data/Run2022C/ParkingDoubleMuonLowMass0/MINIAOD/PromptReco-v1/000/355/862/00000/fc972444-ec73-42ea-897c-f2b918fbee7a.root']
 
-#process.source.fileNames = ['/store/user/cherepan/z2tautau_3mu_GEN_KinFit/z2tautau_3mu_GEN_KinFit14_03_2020_MiniAOD/220721_102947/0000/z2tautau_3mu_GEN_KinFit_MiniAOD_1.root']
+
+#process.source.fileNames = ['/store/mc/Run3Summer22MiniAODv3/DstoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/MINIAODSIM/124X_mcRun3_2022_realistic_v12-v2/2550000/0166adf0-8995-4318-ba30-9672b84544df.root']
+
 
 ####################### TauNtuple (MINIAOD version) ######################
 from SkimProduction.CRAB.NtupleConfig_cff import setupTauNtuple
