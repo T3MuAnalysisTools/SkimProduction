@@ -52,7 +52,7 @@ elif options.hltPathFilter == "IsoMu20" :
         filterCut = "hltL3crIsoL1sMu18L1f0L2f10QL3f20QL3trkIsoFiltered0p09"
         
 else :
-    print "[" + sys.argv[0] + "]:", "hltPathFilter=", options.hltPathFilter, "is not a valid parameter!"
+    print( "[" + sys.argv[0] + "]:", "hltPathFilter=", options.hltPathFilter, "is not a valid parameter!")
     sys.exit(100)
 
 
@@ -68,7 +68,8 @@ process.load('Configuration.Geometry.GeometrySimDB_cff')
 
 process.load("Configuration.StandardSequences.GeometryRecoDB_cff")
 process.load("Configuration.StandardSequences.MagneticField_38T_cff")
-process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+#process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
 process.GlobalTag.globaltag = cms.string(options.globalTag)
 
@@ -134,7 +135,7 @@ process.TrackCollection.LostTrackTag = cms.InputTag('<LostTrackTag>')
 process.DsTauNtuple = cms.Sequence(process.T3MTree)
 updatedTauName = "slimmedTausPlusDeepTau" #name of pat::Tau collection with new tau-Ids
 import RecoTauTag.RecoTau.tools.runTauIdMVA as tauIdConfig
-tauIdEmbedder = tauIdConfig.TauIDEmbedder(process, cms, debug = False,
+tauIdEmbedder = tauIdConfig.TauIDEmbedder(process,  debug = False,
                     updatedTauName = updatedTauName,
                     toKeep = ["deepTau2017v2p1", #deepTau TauIDs
                                ])
