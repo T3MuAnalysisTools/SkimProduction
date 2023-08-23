@@ -1,7 +1,78 @@
-DataMCTypes: ds_tau
-Path: /DstoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM
-GT: 
+
+
+
+/ParkingDoubleMuonLowMass0/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass1/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass2/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass3/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass4/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass5/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass6/Run2022C-PromptReco-v1/MINIAOD
+/ParkingDoubleMuonLowMass7/Run2022C-PromptReco-v1/MINIAOD
+
+
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass0/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
 Prod: global
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass1/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass2/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass3/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass4/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass5/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass6/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+
+DataMCTypes: data
+Path: /ParkingDoubleMuonLowMass7/Run2022C-PromptReco-v1/MINIAOD
+GT: 124X_dataRun3_PromptAnalysis_v1
+Prod: global
+
+
+
+/DoubleMuonLowMass/Run2022A-10Dec2022-v1/MINIAOD
+/DoubleMuonLowMass/Run2022A-16Jun2023-v1/MINIAOD
+/DoubleMuonLowMass/Run2022A-27Jun2023-v1/MINIAOD
+/DoubleMuonLowMass/Run2022B-10Dec2022-v1/MINIAOD
+/DoubleMuonLowMass/Run2022B-PromptReco-v1/MINIAOD
+
+
+DataMCTypes: ds_tau
+Path: /DstoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_postEE_v1-v2/MINIAODSIM
+GT:  124X_mcRun3_2022_realistic_v12 
+Prod: global
+
 
 
 
@@ -44,16 +115,9 @@ dataset=/ButoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22M
 dataset=/ButoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_postEE_v1-v2/MINIAODSIM
 
 
-
 dataset=/BdtoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM
 dataset=/BdtoTau_Tauto3Mu_3MuFilter_TuneCP5_13p6TeV_pythia8-evtgen/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_postEE_v1-v2/MINIAODSIM
 
 
 
 
-
-/DoubleMuonLowMass/Run2022A-10Dec2022-v1/MINIAOD
-/DoubleMuonLowMass/Run2022A-16Jun2023-v1/MINIAOD
-/DoubleMuonLowMass/Run2022A-27Jun2023-v1/MINIAOD
-/DoubleMuonLowMass/Run2022B-10Dec2022-v1/MINIAOD
-/DoubleMuonLowMass/Run2022B-PromptReco-v1/MINIAOD

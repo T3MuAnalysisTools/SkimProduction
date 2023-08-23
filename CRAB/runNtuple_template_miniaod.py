@@ -69,8 +69,10 @@ process.load('Configuration.Geometry.GeometrySimDB_cff')
 process.load("Configuration.StandardSequences.GeometryRecoDB_cff")
 process.load("Configuration.StandardSequences.MagneticField_38T_cff")
 #process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
-from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
+from Configuration.AlCa.GlobalTag import GlobalTag            #RunIII 
+#from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag  #RunII
 process.GlobalTag.globaltag = cms.string(options.globalTag)
 
 process.load('RecoMET.METFilters.badGlobalMuonTaggersAOD_cff')
