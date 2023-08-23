@@ -26,6 +26,7 @@ T3MTree = cms.EDAnalyzer('T3MNtuple',
                          TriggerMuonMatchingdr = cms.untracked.double(0.03),
                          WhatData = cms.untracked.string('2018'),
                          DataMCType    = cms.untracked.string('data'), #Defaut: data. Have a look at src/DataMCType.cc for available types   Set in other instance, here only for local tests
+                         algInputTag = cms.InputTag( "gtStage2Digis" ),
                          reco_muons = cms.InputTag('muons'),
                          pat_muons = cms.InputTag('slimmedMuons'),
                          pat_electrons = cms.InputTag('slimmedElectrons'),
