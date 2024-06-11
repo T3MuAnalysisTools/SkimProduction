@@ -49,7 +49,7 @@ if __name__ == "__main__":
         for line in f:
             primary_dataset_name = line.strip()#args.inputdataset
 
-            instance=" instance=prod/phys03"
+            instance=" instance=prod/global"
             command=das_cmd+" --query=\"dataset dataset="+primary_dataset_name+instance+"\""
 
 
@@ -66,6 +66,7 @@ if __name__ == "__main__":
             print " filelists   ", command
             if debug: print 'command',command
             filelist_used = "/store"+commands.getstatusoutput(command)[1].replace("\n",",").split("/store",1)[1]
+            print filelist_used
             filelist_selected = filelist_used.split(',')[0:int(args.nfiles)]
             filelist_final = ""
             for x in filelist_selected:

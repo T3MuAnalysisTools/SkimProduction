@@ -59,10 +59,10 @@ def setcrabconfig2(DataSets,JobTags,DataMCTypes,ProdInstance,GlobalTags, prodtag
         crabconf.write ("config.Data.inputDBS  = '%s' \n" % str(prodintance) )
         if "data" in dmctype:
             crabconf.write ("config.Data.splitting = 'LumiBased' \n")
-            crabconf.write ("config.Data.unitsPerJob = 100 \n")
+            crabconf.write ("config.Data.unitsPerJob = 120 \n")
         else:
             crabconf.write ("config.Data.splitting = 'FileBased' \n")
-            crabconf.write ("config.Data.unitsPerJob = 5 \n")
+            crabconf.write ("config.Data.unitsPerJob = 7 \n")
         crabconf.write ("config.Data.totalUnits = -1 \n")
         if "data" in dmctype:
             crabconf.write ("config.Data.lumiMask = '%s' \n" % LumiMask)
